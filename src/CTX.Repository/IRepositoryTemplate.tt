@@ -1,0 +1,15 @@
+﻿<#@ template language="C#" debug="true" hostspecific="true"#>
+<#@ include file="Config.ttinclude"#>using Base.Entities;
+using HTActive.Core.Repository;
+namespace Base.Repository
+{<#
+foreach(var entity in entities){
+    #>
+
+    public partial interface I<#=entity.Name#>Repository : IBaseRepository<<#=entity.Name#>>
+    {
+    }
+<# 
+  }
+#>
+}

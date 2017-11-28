@@ -1,0 +1,49 @@
+﻿<#@ template language="C#" debug="true" hostspecific="true"#>
+<#@ include file="Config.ttinclude"#>using Base.Entities;
+using Microsoft.Extensions.DependencyInjection;
+using HTActive.Core.Repository;
+using System;
+
+namespace Base.Repository
+{
+    public class InstanceUnitOfWork : BaseUnitOfWork<InstanceEntities>
+    {
+        public InstanceUnitOfWork(InstanceEntities entity)
+            : base(entity)
+        {
+        }
+    }
+    public class CTXDBRepository
+    {
+	    public IServiceProvider ServiceProvider{get;private set;}
+		public IBaseUnitOfWork<InstanceEntities> InstanceUnitOfWork{get;private set;}
+        public CTXDBRepository(IBaseUnitOfWork<InstanceEntities> unitOfWork, IServiceProvider _serviceProvider)
+        {
+			this.InstanceUnitOfWork = unitOfWork;
+			this.ServiceProvider = _serviceProvider;
+		}
+        public void Commit()
+        {
+            this.InstanceUnitOfWork.Commit();
+        }
+        #region Repositories
+        <#foreach(var entity in entities){#>private I<#=entity.Name#>Repository _<#=entity.Name#>Repository;
+        public I<#=entity.Name#>Repository <#=entity.Name#>Repository 
+		{ 
+			get
+			{
+				return _<#=entity.Name#>Repository ?? 
+				(_<#=entity.Name#>Repository = ServiceProvider.GetService<I<#=entity.Name#>Repository>());
+			}
+		}
+		<#}#>#endregion
+    }
+	
+    public static class RegisterServiceHelper
+    {
+        public static void RegisterRepository(IServiceCollection services)
+        {
+		<#foreach(var entity in entities){#>	services.AddScoped<I<#=entity.Name#>Repository, <#=entity.Name#>Repository>();
+		<#}#>}
+    }
+}

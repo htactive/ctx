@@ -1,0 +1,25 @@
+﻿<#@ template language="C#" debug="true" hostspecific="true"#>
+<#@ include file="Config.ttinclude"#>using Base.Entities;
+using HTActive.Core.Repository;
+namespace Base.Repository
+{<#
+foreach(var entity in entities){
+    #>
+
+    public partial class <#=entity.Name#>Repository : BaseRepository<<#=entity.Name#>, InstanceEntities>, I<#=entity.Name#>Repository
+    {
+        public <#=entity.Name#>Repository(IBaseUnitOfWork<InstanceEntities> unitOfWork)
+            : base(unitOfWork)
+        {
+
+        }
+		<# if(!entity.IsOverrideKeyMethod) {#>protected override int GetKeyId(<#=entity.Name#> model)
+        {
+            return model.<#=entity.IdKey#>;
+        }
+<#}#>
+	}
+<# 
+  }
+#>
+}
