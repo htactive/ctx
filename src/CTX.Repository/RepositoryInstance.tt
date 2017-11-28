@@ -1,5 +1,5 @@
 ﻿<#@ template language="C#" debug="true" hostspecific="true"#>
-<#@ include file="Config.ttinclude"#>using Base.Entities;
+<#@ include file="Config.ttinclude"#>using CTX.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using HTActive.Core.Repository;
 using System;
