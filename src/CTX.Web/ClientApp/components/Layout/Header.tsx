@@ -6,7 +6,7 @@ export class Header extends React.Component<{}, {}> {
             <div id="header" className="page-navbar">
                 <a href="/admin" className="navbar-brand hidden-xs hidden-sm logo logo-title">
                     <img src="/images/admin_logo.png" className="logo hidden-xs" alt="CTX Admin" />
-                    <img src="" className="logo-sm hidden-lg hidden-md" alt="CTX Admin" />
+                    <img src="/images/admin_logosm.png" className="logo-sm hidden-lg hidden-md" alt="CTX Admin" />
                 </a>
                 <div id="navbar-no-collapse" className="navbar-no-collapse">
                     <ul className="nav navbar-nav">
