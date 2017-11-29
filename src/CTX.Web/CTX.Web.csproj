@@ -22,9 +22,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Layout\Index.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CTX.Common\CTX.Common.csproj" />
     <ProjectReference Include="..\CTX.Entities\CTX.Entities.csproj" />
     <ProjectReference Include="..\CTX.Repository\CTX.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\models\" />
+    <Folder Include="ClientApp\services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\Layout\Index.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
