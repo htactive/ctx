@@ -2,8 +2,66 @@
     ViewData["Title"] = "Parrot Services";
 }
 
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Css files -->
+    <!-- Icons -->
+    <link href="/assets_admin/css/icons.css" asp-append-version="true" rel="stylesheet" />
+    <!-- Bootstrap stylesheets (included template modifications) -->
+    <link href="/assets_admin/css/bootstrap.css" asp-append-version="true" rel="stylesheet" />
+    <!-- Plugins stylesheets (all plugin custom css) -->
+    <link href="/assets_admin/css/plugins.css" asp-append-version="true" rel="stylesheet" />
+    <!-- Main stylesheets (template main css file) -->
+    <link href="/assets_admin/css/main.css" asp-append-version="true" rel="stylesheet" />
+    <!-- Custom stylesheets ( Put your own changes here ) -->
+    <link href="/assets_admin/css/custom.css" asp-append-version="true" rel="stylesheet" />
+    <link href="/assets_admin/css/_custom.css" asp-append-version="true" rel="stylesheet" />
+    <link href="/assets_admin/css/_object-features.css" asp-append-version="true" rel="stylesheet" />
+    <link href="/assets_admin/css/_page-layout-preview.css" asp-append-version="true" rel="stylesheet" />
+    <link href="/assets_admin/css/_spinner.css" asp-append-version="true" rel="stylesheet" />
+    <link href="/assets_admin/css/react-draft-wysiwyg.css" rel="stylesheet" />
+    <link href="~/assets_admin/css/react-datepicker.css" asp-append-version="true" rel="stylesheet" />
+    <link href="~/assets_admin/css/react-select.css" asp-append-version="true" rel="stylesheet" />
+</head>
+
 <div id="react-app" asp-prerender-module="ClientApp/dist/main-server">Loading...</div>
 
 @section scripts {
     <script src="~/dist/main-client.js" asp-append-version="true"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- Core plugins ( not remove ) -->
+    <script src="/assets_admin/js/libs/modernizr.custom.js"></script>
+    <script src="/assets_admin/js/jRespond.min.js"></script>
+    <!-- Custom scroll for sidebars,tables and etc. -->
+    <script src="/assets_admin/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/assets_admin/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+    <script src="/assets_admin/plugins/core/pace/pace.min.js"></script>
+    <!-- Remove click delay in touch -->
+    <script src="/assets_admin/plugins/core/fastclick/fastclick.js"></script>
+    <!-- Increase jquery animation speed -->
+    <script src="/assets_admin/plugins/core/velocity/jquery.velocity.min.js"></script>
+    <!-- Bootbox fast bootstrap modals -->
+    <script src="/assets_admin/plugins/ui/bootbox/bootbox.js"></script>
+
+    <!-- Bootstrap plugins -->
+    <script src="/assets_admin/js/bootstrap/bootstrap.js"></script>
+    <!-- Other plugins ( load only nessesary plugins for every page) -->
+    <script src="/assets_admin/js/libs/date.js"></script>
+    <script src="/assets_admin/plugins/ui/waypoint/waypoints.js"></script>
+    <script src="/assets_admin/plugins/ui/notify/jquery.gritter.js"></script>
+    <script src="/assets_admin/plugins/ui/bootstrap-sweetalert/sweet-alert.js"></script>
+
+    <script src="/assets_admin/plugins/misc/countTo/jquery.countTo.js"></script>
+    <script src="/assets_admin/js/jquery.dynamic.js"></script>
+    @*<script src="/assets_admin/js/main.js" asp-append-version="true"></script>*@
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-with-addons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.min.js"></script>
+    <!--react bootstrap table-->
+    <script src="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table.min.js"></script>
+    <!--for react bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.30.8/react-bootstrap.min.js"></script>
 }

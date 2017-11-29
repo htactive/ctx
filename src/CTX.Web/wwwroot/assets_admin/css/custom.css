@@ -1,0 +1,82 @@
+/* -----------------------------------------
+   Custom.css - put your own changes here
+----------------------------------------- */
+
+.dashboard-icons {
+  margin-right: 10px;
+}
+
+.dashboard-flex {
+  display: flex;
+}
+
+.dashboard-stretch {
+  align-items: stretch;
+}
+
+.dashboard-flex-stretch {
+  display: flex;
+  align-items: stretch;
+}
+
+.dashboard-min-height {
+  min-height: 95%;
+}
+
+.page-sidebar .side-nav .nav > li a.active-admin {
+  background-color: #f2f2f2;
+}
+
+.page-sidebar .side-nav .nav > li ul.sub.show li a.active-admin {
+  background-color: #f2f2f2;
+}
+
+.snippet-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+ul.l-legend {
+  list-style: none;
+  position: relative;
+  /* display: inline; */
+  padding: 0px;
+}
+
+.l-legend li {
+  /* float: left; */
+  display: inline-block;
+  position: relative;
+  margin-left: 5px;
+}
+
+.l-legend li span {
+  width: 20px;
+  height: 5px;
+  display: inline-block;
+}
+
+.l-legend.pie-legend li span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.create-table:focus {
+  border-color: dodgerblue !important;
+}
+
+.table-header-custom {
+  background: ghostwhite; !important;
+}
+
+
+.table-header-custom th{
+  background: ghostwhite; !important;
+}
+
+.cell-error {
+  border-color: red;
+}

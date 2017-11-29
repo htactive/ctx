@@ -1,0 +1,50 @@
+.features-preview .feature-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features-preview {
+  background: #EEEEEE;
+  padding-top: 10px;
+}
+
+.features-preview .feature-menu {
+  padding-top: 10px;
+}
+
+.features-preview .feature-section {
+  background-color: white;
+}
+
+.features-preview .feature-section.selected {
+  border: 1px dashed red;
+}
+
+.features-preview .paragraph-section.selected {
+  border: 1px dashed blue;
+}
+
+ul.paragraph-list {
+  list-style-position: inside;
+  text-align: left;
+  padding-left: 0px;
+}
+
+ul.paragraph-list li {
+  float: left;
+  width: 33.333333333%;
+}
+
+.feature-cover-image {
+  height: 100px;
+  width: 100%;
+}
+
+.features-preview span.feature-kv-title{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.features-preview .feature-kv-value-container{
+  padding-top:10px
+}

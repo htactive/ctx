@@ -22,7 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\commons\constant.ts" />
+    <None Remove="ClientApp\components\Layout\Footer.tsx" />
+    <None Remove="ClientApp\components\Layout\Header.tsx" />
     <None Remove="ClientApp\components\Layout\Index.tsx" />
+    <None Remove="ClientApp\components\Layout\LeftSideBar.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,7 +41,45 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\assets_admin\css\bootstrap.css" />
+    <None Include="wwwroot\assets_admin\css\custom.css" />
+    <None Include="wwwroot\assets_admin\css\icons.css" />
+    <None Include="wwwroot\assets_admin\css\main.css" />
+    <None Include="wwwroot\assets_admin\css\plugins.css" />
+    <None Include="wwwroot\assets_admin\css\react-datepicker.css" />
+    <None Include="wwwroot\assets_admin\css\react-draft-wysiwyg.css" />
+    <None Include="wwwroot\assets_admin\css\react-select.css" />
+    <None Include="wwwroot\assets_admin\css\_custom.css" />
+    <None Include="wwwroot\assets_admin\css\_object-features.css" />
+    <None Include="wwwroot\assets_admin\css\_page-layout-preview.css" />
+    <None Include="wwwroot\assets_admin\css\_spinner.css" />
+    <None Include="wwwroot\assets_admin\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\assets_admin\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\assets_admin\fonts\linea.woff" />
+    <None Include="wwwroot\assets_admin\js\bootstrap\bootstrap.js" />
+    <None Include="wwwroot\assets_admin\js\jquery.dynamic.js" />
+    <None Include="wwwroot\assets_admin\js\jRespond.min.js" />
+    <None Include="wwwroot\assets_admin\js\libs\date.js" />
+    <None Include="wwwroot\assets_admin\js\libs\modernizr.custom.js" />
+    <None Include="wwwroot\assets_admin\js\main.js" />
+    <None Include="wwwroot\assets_admin\plugins\core\fastclick\fastclick.js" />
+    <None Include="wwwroot\assets_admin\plugins\core\pace\pace.min.js" />
+    <None Include="wwwroot\assets_admin\plugins\core\slimscroll\jquery.slimscroll.horizontal.min.js" />
+    <None Include="wwwroot\assets_admin\plugins\core\slimscroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\assets_admin\plugins\core\velocity\jquery.velocity.min.js" />
+    <None Include="wwwroot\assets_admin\plugins\misc\countTo\jquery.countTo.js" />
+    <None Include="wwwroot\assets_admin\plugins\ui\bootbox\bootbox.js" />
+    <None Include="wwwroot\assets_admin\plugins\ui\bootstrap-sweetalert\sweet-alert.js" />
+    <None Include="wwwroot\assets_admin\plugins\ui\notify\jquery.gritter.js" />
+    <None Include="wwwroot\assets_admin\plugins\ui\waypoint\waypoints.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\commons\constant.ts" />
+    <TypeScriptCompile Include="ClientApp\components\Layout\Footer.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Layout\Header.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Layout\Index.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\Layout\LeftSideBar.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
