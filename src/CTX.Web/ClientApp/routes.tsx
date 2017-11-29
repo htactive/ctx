@@ -10,5 +10,5 @@ export const routes = <Layout>
     <Route exact path='/' component={ Home } />
     <Route path='/counter' component={ Counter } />
     <Route path='/fetchdata/:startDateIndex?' component={FetchData} />
-    <Route path={AdminRoutePath.Index} component={Home} />
+    <Route path={AdminRoutePath.Dashboard} component={Home} />
 </Layout>;
