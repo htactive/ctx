@@ -119,7 +119,7 @@
                 <!-- / .sidebar-panel -->
                 <div class="user-info clearfix">
                     <img src="assets_admin/img/avatars/128.jpg" alt="avatar">
-                    <a href="user-profile.html"><span class="name">Admin</span></a>
+                    <a href="#"><span class="name">Admin</span></a>
 
                 </div>
                 <!--  .sidebar-panel -->
@@ -191,48 +191,50 @@
                 <div id="page-header" class="clearfix">
                     <div class="page-header">
                         <h2>Báo cáo doanh thu</h2>
-                        <span class="txt">Báo cáo doanh thu công ty theo tháng, năm, ...</span>
+                        <span class="txt">Báo cáo doanh thu công ty theo tháng năm 2017.</span>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 style="text-align: center"> Báo cáo doanh thu công ty theo tháng năm 2017.</h2>
 
-                <h2 style="text-align: center">Chọn thông số để xem báo cáo</h2>
-
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <!-- col-lg-6 end here -->
-                            <div class="col-lg-6">
-                                <!-- col-lg-6 start here -->
-                                <label class="control-label">Chọn năm</label>
-                                <select class="form-control">
-                                    <option value="1">2015</option>
-                                    <option value="2">2016</option>
-                                    <option value="3">2017</option>
-                                    <option value="4">2018</option>
-
-                                </select>
+                        <!-- End .panel -->
+                        <div class="panel panel-default ">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Biểu đồ doanh thu theo tháng</h4>
                             </div>
-                            <!-- col-lg-6 end here -->
-                            <!-- col-lg-6 start here -->
-                            <div class="col-lg-6">
-                                <!-- col-lg-6 start here -->
-                                <label class="control-label">Báo cáo theo</label>
-                                <select class="form-control">
-                                    <option value="1">Tháng</option>
-                                    <option value="2">Quý</option>
-                                    <option value="3">Tuần</option>
-                                </select>
+                            <div class="panel-body text-center">
+                                <div class="canvas-holder">
+                                    <canvas id="bar-chartjs" height="100"></canvas>
+                                </div>
                             </div>
-                            <!-- col-lg-6 end here -->
-                            <br/>
-                            <!-- col-lg-6 start here -->
-                            <div class="col-lg-12 text-center" style="padding-top: 40px">
-                                <!-- col-lg-6 start here -->
-                                <a href="sale-report-view-detail.html" type="submit" class="btn btn-success ">Xem báo cáo</a>
-                            </div>
-                            <!-- col-lg-6 end here -->
                         </div>
-                    </form>
+                        <div class="panel">
+                            <tbody>
+                            <tr>
+                                <td class="legendColorBox" >
+                                    <div style="border:1px solid ;padding:1px; width:25px">
+                                        <div style="width:20px;height:0;border:5px solid #bac3d2;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">
+                                    <div style="font-weight:bold;font-size:13px;">&nbsp;Doanh thu</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="legendColorBox" >
+                                    <div style="border:1px solid ;padding:1px; width:25px" >
+                                        <div style="width:20px;height:0;border:5px solid #60b1cc;overflow:hidden"></div>
+                                    </div>
+                                </td>
+                                <td class="legendLabel">
+                                    <div style="font-weight:bold;font-size:13px;">&nbsp;Lợi nhuận</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- / .page-content-inner -->
@@ -289,18 +291,7 @@
 <script src="assets_admin/plugins/ui/bootbox/bootbox.js"></script>
 <!-- Other plugins ( load only nessesary plugins for every page) -->
 <script src="assets_admin/js/libs/date.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.custom.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.pie.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.resize.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.time.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.growraf.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.categories.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.stack.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.orderBars.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.tooltip.min.js"></script>
-<script src="assets_admin/plugins/charts/flot/jquery.flot.curvedLines.js"></script>
 <script src="assets_admin/plugins/charts/sparklines/jquery.sparkline.js"></script>
-<script src="assets_admin/plugins/charts/progressbars/progressbar.js"></script>
 <script src="assets_admin/plugins/ui/waypoint/waypoints.js"></script>
 <script src="assets_admin/plugins/ui/weather/skyicons.js"></script>
 <script src="assets_admin/plugins/ui/notify/jquery.gritter.js"></script>
@@ -309,6 +300,8 @@
 <script src="assets_admin/plugins/misc/countTo/jquery.countTo.js"></script>
 <script src="assets_admin/js/jquery.dynamic.js"></script>
 <script src="assets_admin/js/main.js"></script>
-<script src="assets_admin/js/pages/dashboard.js"></script>
+<script src="assets_admin/plugins/charts/chartjs/Chart.js"></script>
+<script src="assets_admin/js/pages/charts-chartjs-custom.js"></script>
+
 </body>
 </html>
