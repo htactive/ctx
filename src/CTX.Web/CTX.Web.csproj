@@ -23,10 +23,12 @@
 
   <ItemGroup>
     <None Remove="ClientApp\commons\constant.ts" />
+    <None Remove="ClientApp\components\Commons\ContentHeader.tsx" />
     <None Remove="ClientApp\components\Layout\Footer.tsx" />
     <None Remove="ClientApp\components\Layout\Header.tsx" />
     <None Remove="ClientApp\components\Layout\Index.tsx" />
     <None Remove="ClientApp\components\Layout\LeftSideBar.tsx" />
+    <None Remove="ClientApp\store\Dashboard.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -76,10 +78,12 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\commons\constant.ts" />
+    <TypeScriptCompile Include="ClientApp\components\Commons\ContentHeader.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Layout\Footer.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Layout\Header.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Layout\Index.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Layout\LeftSideBar.tsx" />
+    <TypeScriptCompile Include="ClientApp\store\Dashboard.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

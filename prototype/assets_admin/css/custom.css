@@ -1,0 +1,73 @@
+/* -----------------------------------------
+   Custom.css - put your own changes here 
+----------------------------------------- */
+.image-upload-container {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  float: left;
+}
+
+.image-upload-element {
+  float: left;
+  width: 20%;
+  padding: 4px;
+  border: 0;
+}
+
+.image-upload-container.single.small .image-upload-element {
+  width: 70px;
+}
+
+.image-upload-container.single.small-landscape .image-upload-element {
+  width: 150px;
+}
+
+.image-upload-element .image-preview {
+  cursor: move;
+}
+
+.image-upload-container.single .image-upload-element .image-preview {
+  cursor: pointer;
+}
+
+.image-upload-element .image-preview.empty-image {
+  cursor: pointer;
+}
+
+.image-upload-element .image-preview .remove-image {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.image-upload-element .image-preview {
+  background-color: #f5f4f4;
+  height: 100px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.image-upload-container.single.small .image-upload-element .image-preview {
+  height: 100px;
+}
+
+.image-upload-container.single.small-landscape .image-upload-element .image-preview {
+  height: 100px;
+}
+
+.image-upload-element .image-preview.empty-image {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAgNTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGZpbGw9IiM0Nzg0MDAiIGQ9Ik0zNywyOWMtMy4zMTQsMC02LDIuNjg2LTYsNnMyLjY4Niw2LDYsNnM2LTIuNjg2LDYtNlM0MC4zMTQsMjksMzcsMjl6IE00MC4yOTgsMzUuNjUKCQlDNDAuMjgxLDM1LjgzMyw0MC4xMzEsMzYsMzkuOTQ4LDM2SDM4djEuOTQ4YzAsMC4xODMtMC4xNzUsMC4zMzMtMC4zNSwwLjM1Yy0wLjQwOCwwLjA0Mi0wLjg3NSwwLjA0Mi0xLjI4MywwCgkJQzM2LjE5MiwzOC4yODEsMzYsMzguMTMxLDM2LDM3Ljk0OFYzNmgtMS45NGMtMC4xOTEsMC0wLjM0MS0wLjE2Ny0wLjM1OC0wLjM1Yy0wLjA0Mi0wLjQwOC0wLjA0Mi0wLjg2NywwLTEuMjc1CgkJQzMzLjcxOSwzNC4xOTIsMzMuODY5LDM0LDM0LjA2LDM0SDM2di0xLjk0YzAtMC4xOTIsMC4xNzUtMC4zNDEsMC4zNS0wLjM1OGMwLjQwOC0wLjA0MiwwLjg3NS0wLjA0MiwxLjI4MywwCgkJQzM3LjgwOCwzMS43MTksMzgsMzEuODY5LDM4LDMyLjA2VjM0aDEuOTQ4YzAuMTgzLDAsMC4zMzMsMC4xOTIsMC4zNDksMC4zNzVDNDAuMzM5LDM0Ljc4Myw0MC4zMzksMzUuMjQyLDQwLjI5OCwzNS42NXoiLz4KCTxnPgoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yNy44MzMsMzVjMC0xLjI0LDAuMjQ5LTIuNDIyLDAuNjk2LTMuNTAxYy0xLjM1LDAuNzQzLTIuODk1LDEuMTY4LTQuNTMxLDEuMTY4CgkJCWMtNS4yMDUsMC05LjQ5NC00LjI4OS05LjQ5NC05LjQ5NHM0LjI4OS05LjQ5NCw5LjQ5NC05LjQ5NHM5LjQ5NCw0LjI4OSw5LjQ5NCw5LjQ5NGMwLDEuMzE5LTAuMjc4LDIuNTc4LTAuNzc0LDMuNzI0CgkJCWMxLjI3OS0wLjY3NywyLjczNC0xLjA2NCw0LjI4Mi0xLjA2NGMxLjE5MSwwLDIuMzI2LDAuMjM0LDMuMzY5LDAuNjQ4YzAuMTk1LTQuMTM5LTAuMTA1LTguMjY5LTAuOTAyLTEyLjM5OAoJCQljLTAuMTQ3LTAuNjYtMC44MDgtMS4yNDYtMS40MzEtMS4zMmMtMS44MzItMC4xODMtMy42NjUtMC4zMjktNS40OTgtMC40NzVjLTAuMjU2LTAuODQ0LTAuNTUtMS45NDMtMC44NzktMi44MjMKCQkJYy0wLjIxOS0wLjY2LTAuOTUyLTEuMjgzLTEuNjEzLTEuMzE5Yy0yLjAxNi0wLjE0OC00LjAzMi0wLjIyMS02LjA0OC0wLjIyMWMtMS45NzksMC0zLjk1OSwwLjA3My01LjkwMiwwLjIyMQoJCQljLTAuNjU5LDAuMDM2LTEuMzkyLDAuNjU5LTEuNjEzLDEuMzE5Yy0wLjMyOSwwLjg3OS0wLjYyMywxLjk3OS0wLjg3OSwyLjgyM2MtMS44MzMsMC4xNDYtMy42MjksMC4yOTItNS40NjEsMC40NzUKCQkJYy0wLjY2LDAuMDc0LTEuMzIsMC42Ni0xLjQzMSwxLjMyYy0xLjU0LDcuOTE3LTEuNTAyLDEyLjI4LDAsMTkuOTRjMC4xMSwwLjYyMywwLjc3MSwxLjIwOSwxLjQzMSwxLjI4MwoJCQljNC42MTcsMC41MTMsOS4yMzYsMC43NjksMTMuODU1LDAuNzY5YzEuMjk1LDAsMi41OTQtMC4wMjUsMy44OTQtMC4wNjRDMjcuODU1LDM1LjY3OSwyNy44MzMsMzUuMzQyLDI3LjgzMywzNXoiLz4KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTguMTMzLDIzLjE3M2MwLDMuMjI1LDIuNjM5LDUuODY1LDUuODY1LDUuODY1czUuODY1LTIuNjQsNS44NjUtNS44NjVjMC0zLjIyNS0yLjY0LTUuODY1LTUuODY1LTUuODY1CgkJCVMxOC4xMzMsMTkuOTQ4LDE4LjEzMywyMy4xNzN6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg==);
+}
