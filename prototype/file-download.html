@@ -4,7 +4,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title> Parrot Services</title>
+    <title>Dashboard | Dynamic Admin Template</title>
     <!-- Mobile specific metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
     <!-- Force IE9 to render in normal mode -->
@@ -176,11 +176,12 @@
                                 class="txt">Thống kê báo cáo</span></a>
                         </li>
                     </ul>
-                </div>
-                <!-- / side-nav -->
 
+                    <!-- / side-nav -->
+
+                </div>
+                <!-- End .sidebar-scrollarea -->
             </div>
-            <!-- End .sidebar-scrollarea -->
         </div>
         <!-- End .sidebar-inner -->
     </aside>
@@ -189,127 +190,120 @@
     <div class="page-content sidebar-page right-sidebar-page clearfix">
         <!-- .page-content-wrapper -->
         <div class="page-content-wrapper">
-            <div class="page-content-inner">
-                <!-- .page-content-inner -->
+            <div class="page-content-inner main-panel">
                 <div id="page-header" class="clearfix">
-                    <div class="page-header">
-                        <h2>Thêm xe vào hệ thống</h2>
-                        <span class="txt">Thêm xe mới vào hệ thống</span>
-                    </div>
+                    <div class="page-header"><h2>Lái xe an toàn</h2></div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- col-lg-12 start here -->
-                        <div class="panel panel-default" id="dyn_0">
-                            <!-- Start .panel -->
-                            <div class="panel-heading">
-                                <h4 class="panel-title">Nhập thông tin xe</h4>
-                            </div>
-                            <div class="panel-body pt0 pb0">
-                                <form id="validate" class="form-horizontal group-border stripped" role="form"
-                                      novalidate="novalidate">
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Loại xe</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <select class="form-control" value="1">
-                                                <option value="3">Toyota Camry 2.0</option>
-                                                <option value="1">Mescedes Benz</option>
-                                                <option value="2">Forturner 2.0</option>
-                                            </select>
+                <div class="page-content-container">
+                    <div>
+                        <div class="panel panel-default plain toggle">
+                            <div class="panel-heading"><h4 class="panel-title bb uppercase"><strong>
+                                <!-- react-text: 226 --> <!-- /react-text --><i class="fa fa-info"></i>
+                                <!-- react-text: 228 --> <!-- /react-text --><!-- react-text: 229 -->Thông tin
+                                <!-- /react-text --></strong></h4></div>
+                            <div class="panel-body">
+                                <div class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group col-lg-12 p0"><label
+                                                class="col-lg-3 col-md-3 control-label">Tên tài liệu</label>
+                                            <div class="col-lg-9 col-md-9"><input type="text" class="form-control"
+                                                                                  placeholder="Nhập tên tài liệu"
+                                                                                  value="TT0904-2018"></div>
                                         </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Hãng</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <select class="form-control" value="1">
-                                                <option value="3">Toyota</option>
-                                                <option value="1">Huynhdai</option>
-                                                <option value="2">Nizsan</option>
-                                                <option value="3">Honda</option>
-                                                <option value="3">Mazda</option>
-                                            </select>
+                                        <div class="form-group col-lg-12 p0"><label
+                                                class="col-lg-3 col-md-3 control-label">Mô tả</label>
+                                            <div class="col-lg-9 col-md-9"><textarea class="form-control" rows="7"
+                                                                                     placeholder="Nhập mô tả">Các nguyên tắc lái xe an toàn</textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Số chổ</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <select class="form-control" value="16">
-                                                <option value="4">4</option>
-                                                <option value="7">7</option>
-                                                <option value="16">16</option>
-                                                <option value="32">32</option>
-                                                <option value="50">50</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Màu xe</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input type="text" value="Trăng đen"
-                                                   class="form-control required" aria-required="true">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label f class="col-lg-2 col-md-3 control-label">Biển số</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input type="text" value="43K1 44203"
-                                                   class="form-control required" aria-required="true">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email" class="col-lg-2 col-md-3 control-label">Số khung/Số
-                                            Máy</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input id="email" name="email" value="12333212332" type="email"
-                                                   class="form-control" placeholder="email">
-                                        </div>
-                                    </div>
-
-                                    <!-- End .form-group  -->
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Ngày mua</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input class="form-control" type="date" value="2017-11-30">
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-                                    <!-- End .form-group  -->
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Hạng đăng kiểm</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input class="form-control" type="date" value="2018-11-20">
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-
-
-                                    <div class="form-group">
-                                        <label for="textarea" class="col-lg-2 col-md-3 control-label">Ghi chú
-                                        </label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <textarea class="form-control" name="textarea" id="textarea"
-                                                      rows="4"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-lg-12 text-center" style="padding-top: 40px">
-                                        <!-- col-lg-6 start here -->
-                                        <button type="submit" class="btn btn-success ">Lưu lại</button>
-                                    </div>
-
-                                </form>
+                                    </fieldset>
+                                </div>
                             </div>
                         </div>
-                        <!-- End .panel -->
+                        <div class="panel panel-default plain toggle">
+                            <div class="panel-heading"><h4 class="panel-title bb uppercase"><strong>
+                                <!-- react-text: 245 --> <!-- /react-text --><i class="fa fa-files"></i>
+                                <!-- react-text: 247 --> <!-- /react-text --><!-- react-text: 248 -->Tệp tin đính kèm
+                                <!-- /react-text --></strong></h4></div>
+                            <div class="panel-body">
+                                <div class="form-horizontal">
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group col-lg-12 no-margin">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="per5">#</th>
+                                                                <th class="per80">Tên file</th>
+                                                                <th class="per15">Thao tác</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Nguyen tac lai xe an toan.pdf</td>
+                                                                <td>
+                                                                    <button class="btn btn-danger btn-alt mr5" data-toggle="modal" data-target="#modal-style2"><i
+                                                                            class="fa fa-trash"></i></button>
+                                                                    <a class="btn btn-primary btn-alt"
+                                                                       href="/file/download?id=21" download=""><i
+                                                                            class="fa fa-download"></i></a></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-sm-12"><a
+                                                        class="file-input btn btn-primary btn-file">
+                                                    <!-- react-text: 273 -->Chọn file <!-- /react-text --></a></div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- col-lg-12 end here -->
+                    <div class="panel panel-default plain panel-menu">
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+                                <div class="row">
+                                    <div class="form-group col-lg-12">
+                                        <div class="text-center">
+                                            <button class="btn btn-primary">Lưu lại</button>
+                                            <button class="btn btn-default">Hủy bỏ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-style2" id="modal-style2" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-dialog-center" style="margin-top: -137px; margin-left: -300px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="bootbox-close-button close" data-dismiss="modal"
+                                    aria-hidden="true">×
+                            </button>
+                            <h4 class="modal-title">Bạn chắc chắn muốn xóa file này chứ?</h4></div>
+                        <div class="modal-body">
+                            <div class="bootbox-body" style="color: red">Thao tác này sẽ xóa file khỏi hệ thống,
+                                và không thể khôi phục lại
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button data-bb-handler="cancel" type="button" class="btn btn-default" data-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button data-bb-handler="confirm" type="button" class="btn btn-primary"
+                                    data-dismiss="modal">OK
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- / .page-content-inner -->
