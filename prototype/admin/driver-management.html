@@ -165,8 +165,11 @@
                     </ul>
                     <ul class="nav">
                         <li><a href="post-managemnet.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span
-                                class="txt">Quản lí tin đăng</span></a>
-                        </li>
+                                class="txt">Quản lí tin đăng</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="file-management.html"><i class="fa fa-file" aria-hidden="true"></i><span
+                                class="txt">Quản lí tài liệu</span></a></li>
                     </ul>
                     <ul class="nav">
                         <li><a href="sale-report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span
@@ -190,8 +193,8 @@
                 <!-- .page-content-inner -->
                 <div id="page-header" class="clearfix">
                     <div class="page-header">
-                        <h2>Quản lí giá</h2>
-                        <span class="txt">Quản lí giá dịch vụ cho thuê xe</span>
+                        <h2>Quản lí tài xế</h2>
+                        <span class="txt">Quản lí các tài xế có trong hệ thống</span>
                     </div>
                 </div>
 
@@ -200,10 +203,9 @@
                         <div class="panel panel-default plain toggle panelMove">
                             <div class="panel-body">
                                 <div class="table-toolbar">
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-style2"><i
-                                            class="fa fa-plus"></i><!-- react-text: 208 --> Đăng bài mới
-                                        <!-- /react-text -->
-                                    </button>
+                                    <a href="driver-new.html" class="btn btn-primary"><i
+                                            class="fa fa-plus"></i> Thêm tài xế
+                                    </a>
                                 </div>
                                 <div class="react-bs-table-container">
                                     <div class="react-bs-table-tool-bar ">
@@ -237,7 +239,7 @@
                                                 <tr>
                                                     <th class="sort-column" data-is-only-head="false" title="Tên"
                                                         data-field="UserName" style="text-align: left;">
-                                                        <!-- react-text: 241 -->Mã Bảng Giá<!-- /react-text --><span
+                                                        <!-- react-text: 241 -->Mã Tài Xế<!-- /react-text --><span
                                                             class="order"><span class="dropdown"><span
                                                             class="caret"
                                                             style="margin: 10px 0px 10px 5px; color: rgb(204, 204, 204);"></span></span><span
@@ -247,20 +249,48 @@
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Số điện thoại"
                                                         data-field="UserProfiles"
-                                                        style="text-align: left;"><!-- react-text: 257 -->Tên bảng giá
+                                                        style="text-align: left;"><!-- react-text: 257 -->Họ Tên
                                                         <!-- /react-text -->
                                                         <div></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Email"
                                                         data-field="UserProfiles"
-                                                        style="text-align: left;"><!-- react-text: 257 -->Ngày áp dụng
+                                                        style="text-align: left;"><!-- react-text: 257 -->CMND
                                                         <!-- /react-text -->
                                                         <div></div>
                                                     </th>
-                                                    <th class="" data-is-only-head="false" title="Email"
+                                                    <th class="" data-is-only-head="false" title="Tài Khoản"
                                                         data-field="UserProfiles"
-                                                        style="text-align: left;"><!-- react-text: 257 -->Ngày kết thúc
+                                                        style="text-align: left;"><!-- react-text: 257 -->Số điện thoại
                                                         <!-- /react-text -->
+                                                        <div></div>
+                                                    </th>
+                                                    <th class="" data-is-only-head="false" title="Cấp bậc"
+                                                        data-field="UserProfiles"
+                                                        style="text-align: left;"><!-- react-text: 257 -->Ngày Sinh
+                                                        <!-- /react-text -->
+                                                        <div></div>
+                                                    </th>
+                                                    <th class="" data-is-only-head="false" title="Cấp bậc"
+                                                        data-field="UserProfiles"
+                                                        style="text-align: left;"><!-- react-text: 257 -->Quê Quán
+                                                        <!-- /react-text -->
+                                                        <div></div>
+                                                    </th>
+                                                    <th class="" data-is-only-head="false" title="Cấp bậc"
+                                                        data-field="UserProfiles"
+                                                        style="text-align: left;"><!-- react-text: 257 -->Bằng Lái
+                                                        <!-- /react-text -->
+                                                        <div></div>
+                                                    </th>
+                                                    <th class="sort-column" data-is-only-head="false" title="Trạng thái"
+                                                        data-field="UserStatusId" style="text-align: center;">
+                                                        <!-- react-text: 260 -->Trạng thái<!-- /react-text --><span
+                                                            class="order"><span class="dropdown"><span
+                                                            class="caret"
+                                                            style="margin: 10px 0px 10px 5px; color: rgb(204, 204, 204);"></span></span><span
+                                                            class="dropup"><span class="caret"
+                                                                                 style="margin: 10px 0px; color: rgb(204, 204, 204);"></span></span></span>
                                                         <div></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Thao tác"
@@ -274,23 +304,38 @@
                                                 <tbody>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG001</div>
+                                                        <div>TX001</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 12/2017</div>
+                                                        <div>Nguyễn Bá Mạnh</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/12/2017</div>
+                                                        <div>135648657</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>01645326897</div>
+                                                    </td>
+                                                    <td tabindex="5" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/12/2017</div>
+                                                        <div>Hà Tĩnh</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>B2</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>Đang đi khách</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="driver-update.html">
+                                                                <button class="btn btn-link" title="Chỉnh sửa"><i
+                                                                        class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa tài xế"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -298,23 +343,38 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG002</div>
+                                                        <div>TX002</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 1/2018</div>
+                                                        <div>Phong Thanh Dương</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/01/2018</div>
+                                                        <div>135648657</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>01645326897</div>
+                                                    </td>
+                                                    <td tabindex="5" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/1/2018</div>
+                                                        <div>An Giang</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>B2</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>Đang nghỉ ốm</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="driver-update.html">
+                                                                <button class="btn btn-link" title="Chỉnh sửa"><i
+                                                                        class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa tài xế"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -322,23 +382,38 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG002</div>
+                                                        <div>TX003</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 2/2018</div>
+                                                        <div>Lâm Chấn Khang</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/02/2018</div>
+                                                        <div>135648657</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>01645326897</div>
+                                                    </td>
+                                                    <td tabindex="5" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>28/02/2018</div>
+                                                        <div>Huế</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>B2</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>Đang rảnh</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="driver-update.html">
+                                                                <button class="btn btn-link" title="Chỉnh sửa"><i
+                                                                        class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa tài xế"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -346,23 +421,38 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG002</div>
+                                                        <div>TX004</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 3/2018</div>
+                                                        <div>Lâm Chấn Huy</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/03/2018</div>
+                                                        <div>135648657</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>01645326897</div>
+                                                    </td>
+                                                    <td tabindex="5" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/03/2018</div>
+                                                        <div>Huế</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>B2</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>Đang rảnh</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="driver-update.html">
+                                                                <button class="btn btn-link" title="Chỉnh sửa"><i
+                                                                        class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa tài xế"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -370,23 +460,38 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG004</div>
+                                                        <div>TX005</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 4/2018</div>
+                                                        <div>Nguyễn Đức Phúc</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/04/2018</div>
+                                                        <div>135648657</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>01645326897</div>
+                                                    </td>
+                                                    <td tabindex="5" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>30/04/2018</div>
+                                                        <div>Huế</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>B2</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>Đang rảnh</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="driver-update.html">
+                                                                <button class="btn btn-link" title="Chỉnh sửa"><i
+                                                                        class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa tài xế"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -394,29 +499,43 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG005</div>
+                                                        <div>TX006</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 5/2018</div>
+                                                        <div>Hoàng Bá Hiệp</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/05/2018</div>
+                                                        <div>135648657</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>01645326897</div>
+                                                    </td>
+                                                    <td tabindex="5" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/05/2018</div>
+                                                        <div>Huế</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>B2</div>
+                                                    </td>
+                                                    <td tabindex="6" class="" style="text-align: center;">
+                                                        <div>Đang rảnh</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="driver-update.html">
+                                                                <button class="btn btn-link" title="Chỉnh sửa"><i
+                                                                        class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa tài xế"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-
 
                                                 </tbody>
                                             </table>
@@ -428,8 +547,8 @@
                                                     style="color: rgb(26, 26, 26);"><!-- react-text: 285 -->Hiển thị
                                                 bảng
                                                 ghi <!-- /react-text --><b>1</b><!-- react-text: 287 -->
-                                                đến <!-- /react-text --><b>8</b><!-- react-text: 289 --> trên tổng
-                                                số <!-- /react-text --><b>8</b><!-- react-text: 291 -->&nbsp;&nbsp;
+                                                đến <!-- /react-text --><b>6</b><!-- react-text: 289 --> trên tổng
+                                                số <!-- /react-text --><b>6</b><!-- react-text: 291 -->&nbsp;&nbsp;
                                                 <!-- /react-text -->
                                             </p><span class="dropup   react-bs-table-sizePerPage-dropdown"
                                                       style="visibility: visible;"><button
@@ -460,6 +579,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade modal-style2" id="modal-style2" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-center" style="margin-top: -137px; margin-left: -300px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="bootbox-close-button close" data-dismiss="modal"
+                                        aria-hidden="true">×
+                                </button>
+                                <h4 class="modal-title">Bạn chắc chắn muốn xóa tài xế này chứ?</h4></div>
+                            <div class="modal-body">
+                                <div class="bootbox-body" style="color: red">Thao tác này sẽ xóa tài xế khỏi hệ thống,
+                                    và không thể khôi phục lại
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button data-bb-handler="cancel" type="button" class="btn btn-default"
+                                        data-dismiss="modal">Cancel
+                                </button>
+                                <button data-bb-handler="confirm" type="button" class="btn btn-primary"
+                                        data-dismiss="modal">OK
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- / .page-content-inner -->
         </div>
@@ -485,11 +629,11 @@
 <!-- Important javascript libs(put in all pages) -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-  window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
 </script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script>
-  window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
 </script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="assets_admin/js/libs/excanvas.min.js"></script>
