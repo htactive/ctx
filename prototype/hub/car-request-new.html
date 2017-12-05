@@ -114,12 +114,12 @@
             <div class="sidebar-scrollarea">
                 <!--  .sidebar-panel -->
                 <div class="sidebar-panel">
-                    <h5 class="sidebar-panel-title">Profile</h5>
+                    <h5 class="sidebar-panel-title"></h5>
                 </div>
                 <!-- / .sidebar-panel -->
                 <div class="user-info clearfix">
-                    <img src="../admin/assets_admin/img/avatars/128.jpg" alt="avatar">
-                    <a href="user-profile.html"><span class="name">Admin</span></a>
+                    <img src="../admin/../admin/assets_admin/img/avatars/128.jpg" alt="avatar">
+                    <a href="user-profile.html"><span class="name">Khách Hàng A</span></a>
 
                 </div>
                 <!--  .sidebar-panel -->
@@ -134,51 +134,22 @@
                                 class="txt">Bảng theo dõi</span></a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a href="user-management.html"><i class="fa  fa-user-secret" aria-hidden="true"></i><span
-                                class="txt">Quản lí người dùng</span></a></li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="customer-management.html"><i class="fa fa-users" aria-hidden="true"></i><span
-                                class="txt">Quản lí khách hàng</span></a></li>
-                    </ul>
-                    <ul class="nav">
                         <li><a href="car-request.html"><i class="fa fa-file-text" aria-hidden="true"></i><span
                                 class="txt">Yêu cầu đặt xe</span></a>
                         </li>
                     </ul>
                     <ul class="nav">
-                        <li><a href="order-management.html"><i class="fa fa-bars" aria-hidden="true"></i><span
-                                class="txt">Quản lí đơn hàng</span></a>
+                        <li><a href="favorite-drivers.html"><i class="fa fa-user" aria-hidden="true"></i><span
+                                class="txt">Tài xế yêu thích</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="history-management.html"><i class="fa fa-history" aria-hidden="true"></i><span
+                                class="txt">Lịch sử chuyến đi</span></a>
                         </li>
                     </ul>
 
-                    <ul class="nav">
-                        <li><a href="car-management.html"><i class="fa fa-car" aria-hidden="true"></i><span class="txt">Quản lí xe</span></a>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="driver-management.html"><i class="fa fa-user" aria-hidden="true"></i><span
-                                class="txt">Quản lí tài xế</span></a>
-                        </li>
-                    </ul>
 
-                    <ul class="nav">
-                        <li><a><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span class="txt">Quản lí trang CMS</span></a>
-                            <ul class="sub">
-                                <li><a href="post-managemnet.html"><span class="txt">Quản lí tin đăng</span></a></li>
-                                <li><a href="services-management.html"><span class="txt">Quản lí dịch vụ</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="file-management.html"><i class="fa fa-file" aria-hidden="true"></i><span
-                                class="txt">Quản lí tài liệu</span></a></li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="sale-report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span
-                                class="txt">Thống kê báo cáo</span></a>
-                        </li>
-                    </ul>
                 </div>
                 <!-- / side-nav -->
 
@@ -196,8 +167,8 @@
                 <!-- .page-content-inner -->
                 <div id="page-header" class="clearfix">
                     <div class="page-header">
-                        <h2>Thêm xe vào hệ thống</h2>
-                        <span class="txt">Thêm xe mới vào hệ thống</span>
+                        <h2>Tạo yêu cầu đặt xe</h2>
+                        <span class="txt">Tạo yêu cầu đặt xe đên Parrot Luxury Services</span>
                     </div>
                 </div>
 
@@ -207,38 +178,52 @@
                         <div class="panel panel-default" id="dyn_0">
                             <!-- Start .panel -->
                             <div class="panel-heading">
-                                <h4 class="panel-title">Nhập thông tin xe</h4>
+                                <h4 class="panel-title">Yêu cầu đặt xe</h4>
                             </div>
                             <div class="panel-body pt0 pb0">
                                 <form id="validate" class="form-horizontal group-border stripped" role="form"
                                       novalidate="novalidate">
-
+                                    <div class="form-group">
+                                        <label for="text" class="col-lg-2 col-md-3 control-label">Tên khách hàng</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input id="text" type="text" value="Hoàng Mạnh Nam"
+                                                   class="form-control required" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-lg-2 col-md-3 control-label">Địa chỉ Email</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input id="email" name="email" value="hoangmanhnam@gmail.com" type="email"
+                                                   class="form-control" placeholder="email">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Số điện thoại</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" class="form-control" value="0122.345.567" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Địa chỉ</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" class="form-control"
+                                                   value="Đường K20, Q. Ngũ Hành Sơn ,TP. Đà Nẵng" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
                                     <div class="form-group">
                                         <label class="col-lg-2 col-md-3 control-label">Loại xe</label>
                                         <div class="col-lg-9 col-md-9">
                                             <select class="form-control" value="1">
-                                                <option value="3">Toyota Camry 2.0</option>
+                                                <option value="3">Không yêu cầu</option>
                                                 <option value="1">Mescedes Benz</option>
-                                                <option value="2">Forturner 2.0</option>
+                                                <option value="2">Forturner</option>
                                             </select>
                                         </div>
                                     </div>
                                     <!-- End .form-group  -->
-
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Hãng</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <select class="form-control" value="1">
-                                                <option value="3">Toyota</option>
-                                                <option value="1">Huynhdai</option>
-                                                <option value="2">Nizsan</option>
-                                                <option value="3">Honda</option>
-                                                <option value="3">Mazda</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-
                                     <div class="form-group">
                                         <label class="col-lg-2 col-md-3 control-label">Số chổ</label>
                                         <div class="col-lg-9 col-md-9">
@@ -253,73 +238,90 @@
                                     </div>
                                     <!-- End .form-group  -->
                                     <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Màu xe</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input type="text" value="Trăng đen"
-                                                   class="form-control required" aria-required="true">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label f class="col-lg-2 col-md-3 control-label">Biển số</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input type="text" value="43K1 44203"
-                                                   class="form-control required" aria-required="true">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email" class="col-lg-2 col-md-3 control-label">Số khung/Số
-                                            Máy</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input id="email" name="email" value="12333212332" type="email"
-                                                   class="form-control" placeholder="email">
-                                        </div>
+                                        <label class="col-lg-2 col-md-3 control-label">Loại dịch vụ</label>
+                                        <div class=col-lg-9 col-md-9
+                                        ">
+                                        <select class="form-control" value="16">
+                                            <option value="1">Thuê xe tự lái</option>
+                                            <option value="2">Thuê xe và tài xế</option>
+                                        </select>
                                     </div>
 
-                                    <!-- End .form-group  -->
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Ngày mua</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input class="form-control" type="date" value="2017-11-30">
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-                                    <!-- End .form-group  -->
-                                    <div class="form-group">
-                                        <label class="col-lg-2 col-md-3 control-label">Hạng đăng kiểm</label>
-                                        <div class="col-lg-9 col-md-9">
-                                            <input class="form-control" type="date" value="2018-11-20">
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
+                            </div>
+                            <!-- End .form-group  -->
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-3 control-label">Có thứ kí?</label>
+                                <div class="col-lg-9 col-md-9 toggle-custom  ">
+                                    <label class="toggle" data-on="YES" data-off="NO">
+                                        <input type="checkbox" id="checkbox-toggle3" name="checkbox-toggle"
+                                               checked="">
+                                        <span class="button-checkbox"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- End .form-group  -->
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-3 control-label">Ngày thuê</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input class="form-control" type="date" value="2017-11-20">
+                                </div>
+                            </div>
 
+                            <!-- End .form-group  -->
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-3 control-label">Ngày trả</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input class="form-control" type="date" value="2017-11-20">
+                                </div>
+                            </div>
+                            <!-- End .form-group  -->
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-3 control-label"> Điểm đi</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="number"
+                                           value="Đà Nẵng"
+                                           placeholder="">
+                                </div>
+                            </div>
 
-                                    <div class="form-group">
-                                        <label for="textarea" class="col-lg-2 col-md-3 control-label">Ghi chú
-                                        </label>
-                                        <div class="col-lg-9 col-md-9">
+                            <!-- End .form-group  -->
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-3 control-label"> Điểm đến</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="number"
+                                           value="Hội An"
+                                           placeholder="">
+                                </div>
+                            </div>
+                            <!-- End .form-group  -->
+                            <div class="form-group">
+                                <label for="textarea" class="col-lg-2 col-md-3 control-label">Ghi chú
+                                </label>
+                                <div class="col-lg-9 col-md-9">
                                             <textarea class="form-control" name="textarea" id="textarea"
                                                       rows="4"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-lg-12 text-center" style="padding-top: 40px">
-                                        <!-- col-lg-6 start here -->
-                                        <button type="submit" class="btn btn-success ">Lưu lại</button>
-                                    </div>
-
-                                </form>
+                                </div>
                             </div>
+
+                            <div class="form-group col-lg-12 text-center" style="padding-top: 40px">
+                                <!-- col-lg-6 start here -->
+                                <button type="submit" class="btn btn-success ">Gửi yêu cầu</button>
+                                <button type="submit" class="btn btn-success ">Hủy</button>
+                            </div>
+
+                            </form>
                         </div>
-                        <!-- End .panel -->
                     </div>
-                    <!-- col-lg-12 end here -->
+                    <!-- End .panel -->
                 </div>
+                <!-- col-lg-12 end here -->
             </div>
-            <!-- / .page-content-inner -->
         </div>
-        <!-- / page-content-wrapper -->
+        <!-- / .page-content-inner -->
     </div>
-    <!-- / page-content -->
+    <!-- / page-content-wrapper -->
+</div>
+<!-- / page-content -->
 </div>
 <!-- / #wrapper -->
 <div id="footer" class="clearfix sidebar-page right-sidebar-page">
