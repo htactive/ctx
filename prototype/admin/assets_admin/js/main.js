@@ -121,8 +121,8 @@ $(document).ready(function() {
             store.set('fixed-left-sidebar', 1);
         } else {store.set('fixed-left-sidebar', 0);}
         if (adminObj.settings.rightSidebar.fixed) {
-            store.set('fixed-right-sidebar', 1);
-        } else {store.set('fixed-right-sidebar', 0);}
+
+        } else {}
     }
 
     //------------- Template Settings -------------//
@@ -143,12 +143,7 @@ $(document).ready(function() {
         $('#fixed-left-sidebar').prop('checked', false);
     }
 
-    //right sidebar
-    if (store.get('fixed-right-sidebar') == 1 ) {
-        $('#fixed-right-sidebar').prop('checked', true);
-    } else {
-        $('#fixed-right-sidebar').prop('checked', false);
-    }
+
 
     //check magic access methods.
     $('#fixed-header-toggle').on('change', function () {
@@ -165,11 +160,5 @@ $(document).ready(function() {
             adminObj.removeFixedSidebar('left');
         }
     });
-    $('#fixed-right-sidebar').on('change', function () {
-        if(this.checked) {
-            adminObj.fixedSidebar('right');
-        } else {
-            adminObj.removeFixedSidebar('right');
-        }
-    });
+
 });
