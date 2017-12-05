@@ -13,7 +13,7 @@ var $document = $(document),
 		carouselPostList: $('.swiper-container-slider-format'),
 		blogListCarousel: $('.swiper-container-blog'),
 		googleMapFooter: $('#footer-map'),
-		contactsMapFooter: $('#contacts-map'),
+		
 		effectMoveBlock: $('.move_img'),
 		wowEfects: $('.wow'),
 		isotopeGallery: $('.gallery-isotope'),
@@ -693,9 +693,7 @@ $window.on('load', function () {
 	if (plugins.googleMapFooter.length) {
 		createMap('footer-map', 14)
 	}
-	if (plugins.contactsMapFooter.length) {
-		createMap('contacts-map', 14)
-	}
+
 
 });
 

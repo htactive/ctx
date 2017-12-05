@@ -131,8 +131,15 @@
                 <div class="side-nav">
                     <ul class="nav">
                         <li><a href="index.html"><i class="l-basic-laptop"></i><span
-                                class="txt">Bảng theo dõi</span></a>
-                        </li>
+                                class="txt">Bảng theo dõi</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="user-management.html"><i class="fa  fa-user-secret" aria-hidden="true"></i><span
+                                class="txt">Quản lí người dùng</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="customer-management.html"><i class="fa fa-users" aria-hidden="true"></i><span
+                                class="txt">Quản lí khách hàng</span></a></li>
                     </ul>
                     <ul class="nav">
                         <li><a href="car-request.html"><i class="fa fa-file-text" aria-hidden="true"></i><span
@@ -144,11 +151,7 @@
                                 class="txt">Quản lí đơn hàng</span></a>
                         </li>
                     </ul>
-                    <ul class="nav">
-                        <li><a href="user-management.html"><i class="fa fa-users" aria-hidden="true"></i><span
-                                class="txt">Quản lí người dùng</span></a>
-                        </li>
-                    </ul>
+
                     <ul class="nav">
                         <li><a href="car-management.html"><i class="fa fa-car" aria-hidden="true"></i><span class="txt">Quản lí xe</span></a>
                         </li>
@@ -158,14 +161,14 @@
                                 class="txt">Quản lí tài xế</span></a>
                         </li>
                     </ul>
+
                     <ul class="nav">
-                        <li><a href="price-management.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span
-                                class="txt">Quản lí giá</span></a>
+                        <li><a><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span class="txt">Quản lí trang CMS</span></a>
+                            <ul class="sub">
+                                <li><a href="post-managemnet.html"><span class="txt">Quản lí tin đăng</span></a></li>
+                                <li><a href="services-management.html"><span class="txt">Quản lí dịch vụ</span></a></li>
+                            </ul>
                         </li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="post-managemnet.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span
-                                class="txt">Quản lí tin đăng</span></a></li>
                     </ul>
                     <ul class="nav">
                         <li><a href="file-management.html"><i class="fa fa-file" aria-hidden="true"></i><span
@@ -193,8 +196,8 @@
                 <!-- .page-content-inner -->
                 <div id="page-header" class="clearfix">
                     <div class="page-header">
-                        <h2>Quản lí giá</h2>
-                        <span class="txt">Quản lí giá dịch vụ cho thuê xe</span>
+                        <h2>Quản lí trang dịch vụ</h2>
+                        <span class="txt">Quản lí nội dung trang dịch vụ khách hàng</span>
                     </div>
                 </div>
 
@@ -203,10 +206,12 @@
                         <div class="panel panel-default plain toggle panelMove">
                             <div class="panel-body">
                                 <div class="table-toolbar">
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-style2"><i
-                                            class="fa fa-plus"></i><!-- react-text: 208 --> Đăng bài mới
-                                        <!-- /react-text -->
-                                    </button>
+                                    <a href="services-new.html">
+                                        <button class="btn btn-primary"><i
+                                                class="fa fa-plus"></i><!-- react-text: 208 --> Thêm mới
+                                            <!-- /react-text -->
+                                        </button>
+                                    </a>
                                 </div>
                                 <div class="react-bs-table-container">
                                     <div class="react-bs-table-tool-bar ">
@@ -238,62 +243,72 @@
 
                                                 <thead>
                                                 <tr>
-                                                    <th class="sort-column" data-is-only-head="false" title="Tên"
-                                                        data-field="UserName" style="text-align: left;">
-                                                        <!-- react-text: 241 -->Mã Bảng Giá<!-- /react-text --><span
+                                                    <th class="" data-is-only-head="false" title="Tên xe"
+                                                        data-field="UserProfiles"
+                                                        style="text-align: left;"><!-- react-text: 257 -->Tên xe
+                                                        <!-- /react-text -->
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
+                                                    </th>
+                                                    <th class="" data-is-only-head="false" title="Email"
+                                                        data-field="UserProfiles"
+                                                        style="text-align: left;"><!-- react-text: 257 -->Giá xe
+                                                        <!-- /react-text -->
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
+                                                    </th>
+                                                    <th class="sort-column" data-is-only-head="false" title="Dòng xe"
+                                                        data-field="UserStatusId" style="text-align: center;">
+                                                        <!-- react-text: 260 -->Dòng xe<!-- /react-text --><span
                                                             class="order"><span class="dropdown"><span
                                                             class="caret"
                                                             style="margin: 10px 0px 10px 5px; color: rgb(204, 204, 204);"></span></span><span
                                                             class="dropup"><span class="caret"
                                                                                  style="margin: 10px 0px; color: rgb(204, 204, 204);"></span></span></span>
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
-                                                    <th class="" data-is-only-head="false" title="Số điện thoại"
-                                                        data-field="UserProfiles"
-                                                        style="text-align: left;"><!-- react-text: 257 -->Tên bảng giá
-                                                        <!-- /react-text -->
-                                                        <div></div>
-                                                    </th>
-                                                    <th class="" data-is-only-head="false" title="Email"
-                                                        data-field="UserProfiles"
-                                                        style="text-align: left;"><!-- react-text: 257 -->Ngày áp dụng
-                                                        <!-- /react-text -->
-                                                        <div></div>
-                                                    </th>
-                                                    <th class="" data-is-only-head="false" title="Email"
-                                                        data-field="UserProfiles"
-                                                        style="text-align: left;"><!-- react-text: 257 -->Ngày kết thúc
-                                                        <!-- /react-text -->
-                                                        <div></div>
+                                                    <th class="sort-column" data-is-only-head="false" title="Tên"
+                                                        data-field="UserName" style="text-align: left;">
+                                                        <!-- react-text: 241 -->Cập nhật lúc<!-- /react-text --><span
+                                                            class="order"><span class="dropdown"><span
+                                                            class="caret"
+                                                            style="margin: 10px 0px 10px 5px; color: rgb(204, 204, 204);"></span></span><span
+                                                            class="dropup"><span class="caret"
+                                                                                 style="margin: 10px 0px; color: rgb(204, 204, 204);"></span></span></span>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Thao tác"
-                                                        data-field="Action"
-                                                        style="text-align: center;"><!-- react-text: 268 -->Thao Tác
-                                                        <!-- /react-text -->
-                                                        <div></div>
-                                                    </th>
+                                                        data-field="Action" style="text-align: center;">
+                                                        <!-- react-text: 268 -->Thao Tác
+                                                        <!-- /react-text -->                                                    </th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG001</div>
+                                                        <div>Porsche 911 Carrera V</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 12/2017</div>
+                                                        <div>1.200.000 VND/Ngày</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/12/2017</div>
+                                                        <div>Trung cấp</div>
                                                     </td>
-                                                    <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/12/2017</div>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -301,23 +316,27 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG002</div>
+                                                        <div>Hyundai i30</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 1/2018</div>
+                                                        <div>800.000 VND/Ngày</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/01/2018</div>
+                                                        <div>Trung cấp</div>
                                                     </td>
-                                                    <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/1/2018</div>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -325,23 +344,27 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG002</div>
+                                                        <div>Porsche 911 Carrera LV</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 2/2018</div>
+                                                        <div>3.000.000 VND/Ngày</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/02/2018</div>
+                                                        <div>Cao cấp</div>
                                                     </td>
-                                                    <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>28/02/2018</div>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -349,23 +372,27 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG002</div>
+                                                        <div>Hyundai Santa Fe</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 3/2018</div>
+                                                        <div>1.000.000 VND/Ngày</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/03/2018</div>
+                                                        <div>Trung cấp</div>
                                                     </td>
-                                                    <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/03/2018</div>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -373,23 +400,27 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG004</div>
+                                                        <div>Porsche 911 Carrera S</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 4/2018</div>
+                                                        <div>1.000.000 VND/Ngày</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/04/2018</div>
+                                                        <div>Trung cấp</div>
                                                     </td>
-                                                    <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>30/04/2018</div>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
@@ -397,30 +428,88 @@
                                                 </tr>
                                                 <tr class="">
                                                     <td tabindex="1" class="" style="text-align: left;">
-                                                        <div>BG005</div>
+                                                        <div>Hyundai Santa Fe</div>
                                                     </td>
                                                     <td tabindex="2" class="" style="text-align: left;">
-                                                        <div>Bảng giá tháng 5/2018</div>
+                                                        <div>1.000.000 VND/Ngày</div>
                                                     </td>
                                                     <td tabindex="3" class="" style="text-align: left;">
-                                                        <div>01/05/2018</div>
+                                                        <div>Trung cấp</div>
                                                     </td>
-                                                    <td tabindex="6" class="" style="text-align: center;">
-                                                        <div>31/05/2018</div>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
                                                     </td>
                                                     <td tabindex="7" class="" style="text-align: center;">
                                                         <div class="table--actions-container">
-                                                            <button class="btn btn-link" title="Thông tin chi tiết"><i
-                                                                    class="fa fa-eye" aria-hidden="true"></i>
-                                                            </button>
-                                                            <button class="btn btn-link" title="Xóa"><i
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
                                                                     class="fa fa-trash" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
                                                     </td>
                                                 </tr>
-
-
+                                                <tr class="">
+                                                    <td tabindex="1" class="" style="text-align: left;">
+                                                        <div>Porsche 911 Carrera S</div>
+                                                    </td>
+                                                    <td tabindex="2" class="" style="text-align: left;">
+                                                        <div>1.000.000 VND/Ngày</div>
+                                                    </td>
+                                                    <td tabindex="3" class="" style="text-align: left;">
+                                                        <div>Trung cấp</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
+                                                    </td>
+                                                    <td tabindex="7" class="" style="text-align: center;">
+                                                        <div class="table--actions-container">
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
+                                                                    class="fa fa-trash" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td tabindex="1" class="" style="text-align: left;">
+                                                        <div>Hyundai Santa Fe</div>
+                                                    </td>
+                                                    <td tabindex="2" class="" style="text-align: left;">
+                                                        <div>2.000.000 VND/Ngày</div>
+                                                    </td>
+                                                    <td tabindex="3" class="" style="text-align: left;">
+                                                        <div>Trung cấp</div>
+                                                    </td>
+                                                    <td tabindex="4" class="" style="text-align: left;">
+                                                        <div>10/12/2017</div>
+                                                    </td>
+                                                    <td tabindex="7" class="" style="text-align: center;">
+                                                        <div class="table--actions-container">
+                                                            <a href="post-update.html">
+                                                                <button class="btn btn-link" title="Chi tiết bài viết">
+                                                                    <i
+                                                                            class="fa fa-edit" aria-hidden="true"></i>
+                                                                </button>
+                                                            </a>
+                                                            <button class="btn btn-link" title="Xóa bài viết"
+                                                                    data-toggle="modal" data-target="#modal-style2"><i
+                                                                    class="fa fa-trash" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -463,6 +552,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade modal-style2" id="modal-style2" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-dialog-center" style="margin-top: -137px; margin-left: -300px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="bootbox-close-button close" data-dismiss="modal"
+                                        aria-hidden="true">×
+                                </button>
+                                <h4 class="modal-title">Bạn chắc chắn muốn xóa bài viết này?</h4></div>
+                            <div class="modal-body">
+                                <div class="bootbox-body" style="color: red">Thao tác này sẽ xóa bài viết khỏi hệ thống,
+                                    và không thể khôi phục lại
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button data-bb-handler="cancel" type="button" class="btn btn-default"
+                                        data-dismiss="modal">Cancel
+                                </button>
+                                <button data-bb-handler="confirm" type="button" class="btn btn-primary"
+                                        data-dismiss="modal">OK
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- / .page-content-inner -->
         </div>
@@ -488,11 +602,11 @@
 <!-- Important javascript libs(put in all pages) -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+  window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
 </script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script>
-    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+  window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
 </script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="assets_admin/js/libs/excanvas.min.js"></script>

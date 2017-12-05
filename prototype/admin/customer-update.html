@@ -196,50 +196,99 @@
                 <!-- .page-content-inner -->
                 <div id="page-header" class="clearfix">
                     <div class="page-header">
-                        <h2>Báo cáo doanh thu</h2>
-                        <span class="txt">Báo cáo doanh thu công ty theo tháng, năm, ...</span>
+                        <h2>Thông tin chi tiết khách hàng</h2>
+                        <span class="txt">Thông tin chi tiết khách hàng</span>
                     </div>
                 </div>
 
-                <h2 style="text-align: center">Chọn thông số để xem báo cáo</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- col-lg-12 start here -->
+                        <div class="panel panel-default" id="dyn_0">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Cập nhật thông tin khách hàng</h4>
+                            </div>
+                            <div class="panel-body pt0 pb0">
+                                <form id="validate" class="form-horizontal group-border stripped" role="form"
+                                      novalidate="novalidate">
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Mã số</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" value="N001"
+                                                   class="form-control required" aria-required="true" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username" class="col-lg-2 col-md-3 control-label">Tên đăng nhập
+                                            *</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input id="username" type="text" value="customer_manhnguyen"
+                                                   class="form-control required" aria-required="true" disabled>
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Email</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="email" value="manh.nguyenba@gmail.com" class="form-control"
+                                                   disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="col-lg-2 col-md-3 control-label">Mật khẩu *</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input id="password" name="email" value="123456" type="password"
+                                                   class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Xác nhận mật khẩu *</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="password" class="form-control" value="123456"
+                                                   placeholder="">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
 
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <!-- col-lg-6 end here -->
-                            <div class="col-lg-6">
-                                <!-- col-lg-6 start here -->
-                                <label class="control-label">Chọn năm</label>
-                                <select class="form-control">
-                                    <option value="1">2015</option>
-                                    <option value="2">2016</option>
-                                    <option value="3">2017</option>
-                                    <option value="4">2018</option>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Họ tên</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" value="Nguyễn Bá Mạnh" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Số điện thoại</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" value="0123456789" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
 
-                                </select>
+                                    <div class="form-group">
+                                        <label class="col-lg-2 col-md-3 control-label">Địa chỉ</label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" value="Kì Anh, Hà Tỉnh" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- End .form-group  -->
+
+                                    <div class="form-group col-lg-12 text-center" style="padding-top: 40px">
+                                        <!-- col-lg-6 start here -->
+                                        <a href="user-management.html">
+                                            <button type="" class="btn btn-success ">Cập nhật</button>
+                                            <button type="" class="btn btn-success ">Hủy</button>
+                                        </a>
+                                    </div>
+
+                                </form>
                             </div>
-                            <!-- col-lg-6 end here -->
-                            <!-- col-lg-6 start here -->
-                            <div class="col-lg-6">
-                                <!-- col-lg-6 start here -->
-                                <label class="control-label">Báo cáo theo</label>
-                                <select class="form-control">
-                                    <option value="1">Tháng</option>
-                                    <option value="2">Quý</option>
-                                    <option value="3">Tuần</option>
-                                </select>
-                            </div>
-                            <!-- col-lg-6 end here -->
-                            <br/>
-                            <!-- col-lg-6 start here -->
-                            <div class="col-lg-12 text-center" style="padding-top: 40px">
-                                <!-- col-lg-6 start here -->
-                                <a href="sale-report-view-detail.html" type="submit" class="btn btn-success ">Xem báo
-                                    cáo</a>
-                            </div>
-                            <!-- col-lg-6 end here -->
                         </div>
-                    </form>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- col-lg-12 end here -->
                 </div>
             </div>
             <!-- / .page-content-inner -->

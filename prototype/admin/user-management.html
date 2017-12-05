@@ -131,8 +131,15 @@
                 <div class="side-nav">
                     <ul class="nav">
                         <li><a href="index.html"><i class="l-basic-laptop"></i><span
-                                class="txt">Bảng theo dõi</span></a>
-                        </li>
+                                class="txt">Bảng theo dõi</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="user-management.html"><i class="fa  fa-user-secret" aria-hidden="true"></i><span
+                                class="txt">Quản lí người dùng</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="customer-management.html"><i class="fa fa-users" aria-hidden="true"></i><span
+                                class="txt">Quản lí khách hàng</span></a></li>
                     </ul>
                     <ul class="nav">
                         <li><a href="car-request.html"><i class="fa fa-file-text" aria-hidden="true"></i><span
@@ -144,11 +151,7 @@
                                 class="txt">Quản lí đơn hàng</span></a>
                         </li>
                     </ul>
-                    <ul class="nav">
-                        <li><a href="user-management.html"><i class="fa fa-users" aria-hidden="true"></i><span
-                                class="txt">Quản lí người dùng</span></a>
-                        </li>
-                    </ul>
+
                     <ul class="nav">
                         <li><a href="car-management.html"><i class="fa fa-car" aria-hidden="true"></i><span class="txt">Quản lí xe</span></a>
                         </li>
@@ -158,14 +161,14 @@
                                 class="txt">Quản lí tài xế</span></a>
                         </li>
                     </ul>
+
                     <ul class="nav">
-                        <li><a href="price-management.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span
-                                class="txt">Quản lí giá</span></a>
+                        <li><a><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span class="txt">Quản lí trang CMS</span></a>
+                            <ul class="sub">
+                                <li><a href="post-managemnet.html"><span class="txt">Quản lí tin đăng</span></a></li>
+                                <li><a href="services-management.html"><span class="txt">Quản lí dịch vụ</span></a></li>
+                            </ul>
                         </li>
-                    </ul>
-                    <ul class="nav">
-                        <li><a href="post-managemnet.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span
-                                class="txt">Quản lí tin đăng</span></a></li>
                     </ul>
                     <ul class="nav">
                         <li><a href="file-management.html"><i class="fa fa-file" aria-hidden="true"></i><span
@@ -246,31 +249,36 @@
                                                             style="margin: 10px 0px 10px 5px; color: rgb(204, 204, 204);"></span></span><span
                                                             class="dropup"><span class="caret"
                                                                                  style="margin: 10px 0px; color: rgb(204, 204, 204);"></span></span></span>
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Số điện thoại"
                                                         data-field="UserProfiles"
                                                         style="text-align: left;"><!-- react-text: 257 -->Số điện thoại
                                                         <!-- /react-text -->
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Email"
                                                         data-field="UserProfiles"
                                                         style="text-align: left;"><!-- react-text: 257 -->Email
                                                         <!-- /react-text -->
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Tài Khoản"
                                                         data-field="UserProfiles"
                                                         style="text-align: left;"><!-- react-text: 257 -->Tài khoản
                                                         <!-- /react-text -->
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Cấp bậc"
                                                         data-field="UserProfiles"
                                                         style="text-align: left;"><!-- react-text: 257 -->Cấp bậc
                                                         <!-- /react-text -->
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="sort-column" data-is-only-head="false" title="Trạng thái"
                                                         data-field="UserStatusId" style="text-align: center;">
@@ -280,14 +288,13 @@
                                                             style="margin: 10px 0px 10px 5px; color: rgb(204, 204, 204);"></span></span><span
                                                             class="dropup"><span class="caret"
                                                                                  style="margin: 10px 0px; color: rgb(204, 204, 204);"></span></span></span>
-                                                        <div></div>
+                                                        <div><input type="text" class="filter text-filter form-control"
+                                                                    placeholder="" value=""></div>
                                                     </th>
                                                     <th class="" data-is-only-head="false" title="Thao tác"
-                                                        data-field="Action"
-                                                        style="text-align: center;"><!-- react-text: 268 -->Thao Tác
-                                                        <!-- /react-text -->
-                                                        <div></div>
-                                                    </th>
+                                                        data-field="Action" style="text-align: center;">
+                                                        <!-- react-text: 268 -->Thao Tác
+                                                        <!-- /react-text -->                                                    </th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -305,7 +312,7 @@
                                                         <div>sale.manhnguyen</div>
                                                     </td>
                                                     <td tabindex="5" class="" style="text-align: left;">
-                                                        <div>Giám đốc</div>
+                                                        <div>Telesale</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
                                                         <div class="toggle-custom">
@@ -383,7 +390,7 @@
                                                         <div>sale.quannguyen</div>
                                                     </td>
                                                     <td tabindex="5" class="" style="text-align: left;">
-                                                        <div>Quản trị viên</div>
+                                                        <div>Saler</div>
                                                     </td>
                                                     <td tabindex="6" class="" style="text-align: center;">
                                                         <div class="toggle-custom">
@@ -539,11 +546,11 @@
 <!-- Important javascript libs(put in all pages) -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
-    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+  window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
 </script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script>
-    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+  window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
 </script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="assets_admin/js/libs/excanvas.min.js"></script>
