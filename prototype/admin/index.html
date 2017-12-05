@@ -1,0 +1,761 @@
+<!doctype html>
+<!--[if lt IE 8]>
+<html class="no-js lt-ie8"> <![endif]-->
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Bảng theo dõi | Parrot Services</title>
+    <!-- Mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
+    <!-- Force IE9 to render in normal mode -->
+    <!--[if IE]>
+    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="application-name" content=""/>
+    <!-- Import google fonts - Heading first/ text second -->
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Css files -->
+    <!-- Icons -->
+    <link href="assets_admin/css/icons.css" rel="stylesheet"/>
+    <!-- Bootstrap stylesheets (included template modifications) -->
+    <link href="assets_admin/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Plugins stylesheets (all plugin custom css) -->
+    <link href="assets_admin/css/plugins.css" rel="stylesheet"/>
+    <!-- Main stylesheets (template main css file) -->
+    <link href="assets_admin/css/main.css" rel="stylesheet"/>
+    <!-- Custom stylesheets ( Put your own changes here ) -->
+    <link href="assets_admin/css/custom.css" rel="stylesheet"/>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="assets_admin/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="assets_admin/img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="assets_admin/img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets_admin/img/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="icon" href="assets_admin/img/ico/favicon.ico" type="image/png">
+    <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+    <meta name="msapplication-TileColor" content="#3399cc"/>
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- .page-navbar -->
+<div id="header" class="page-navbar">
+    <!-- .navbar-brand -->
+    <a href="index.html" class="navbar-brand hidden-xs hidden-sm">
+        <img src="assets_admin/img/logo.png" class="logo hidden-xs" alt="Dynamic logo">
+        <img src="assets_admin/img/logosm.png" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
+    </a>
+    <!-- / navbar-brand -->
+    <!-- .no-collapse -->
+    <div id="navbar-no-collapse" class="navbar-no-collapse">
+        <!-- top left nav -->
+        <ul class="nav navbar-nav">
+            <li class="toggle-sidebar">
+                <a href="#">
+                    <i class="fa fa-reorder"></i>
+                    <span class="sr-only">Collapse sidebar</span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- / top left nav -->
+        <!-- top right nav -->
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="sr-only">Thông báo</span>
+                    <span class="badge badge-danger">6</span>
+                </a>
+                <ul class="dropdown-menu right dropdown-notification" role="menu">
+                    <li><a href="car-request-detail.html" class="dropdown-menu-header">Thông báo</a>
+                    </li>
+                    <li><a href="car-request-detail.html"><i class="l-basic-life-buoy"></i> Đơn hàng mới từ Mạnh</a>
+                    </li>
+                    <li><a href="car-request-detail.html"><i class="l-basic-gear"></i> Đơn hàng mới từ Hoàng</a>
+                    </li>
+                    <li><a href="car-request-detail.html"><i class="l-weather-lightning"></i> Đơn hàng mới từ Thuận</a>
+                    </li>
+                    <li><a href="car-request-detail.html"><i class="l-basic-server2"></i> Đơn hàng mới từ Mạnh</a>
+                    </li>
+                    <li><a href="car-request-detail.html"><i class="l-basic-lightbulb"></i>Đơn hàng mới từ Huân</a>
+                    </li>
+                    <li><a href="car-request.html" class="view-all">Xem tất cả <i class="l-arrows-right"></i> </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-power-off"></i>
+                    <span class="sr-only">Logout</span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- / top right nav -->
+    </div>
+    <!-- / collapse -->
+</div>
+<!-- / page-navbar -->
+<!-- #wrapper -->
+<div id="wrapper">
+    <!-- .page-sidebar -->
+    <aside id="sidebar" class="page-sidebar hidden-md hidden-sm hidden-xs">
+        <!-- Start .sidebar-inner -->
+        <div class="sidebar-inner">
+            <!-- Start .sidebar-scrollarea -->
+            <div class="sidebar-scrollarea">
+                <!--  .sidebar-panel -->
+                <div class="sidebar-panel">
+                    <h5 class="sidebar-panel-title">Profile</h5>
+                </div>
+                <!-- / .sidebar-panel -->
+                <div class="user-info clearfix">
+                    <img src="assets_admin/img/avatars/128.jpg" alt="avatar">
+                    <a href="user-profile.html"><span class="name">Admin</span></a>
+
+                </div>
+                <!--  .sidebar-panel -->
+                <div class="sidebar-panel">
+                    <h5 class="sidebar-panel-title"></h5>
+                </div>
+                <!-- / .sidebar-panel -->
+                <!-- .side-nav -->
+                <div class="side-nav">
+                    <ul class="nav">
+                        <li><a href="index.html"><i class="l-basic-laptop"></i><span
+                                class="txt">Bảng theo dõi</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="car-request.html"><i class="fa fa-file-text" aria-hidden="true"></i><span
+                                class="txt">Yêu cầu đặt xe</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="order-management.html"><i class="fa fa-bars" aria-hidden="true"></i><span
+                                class="txt">Quản lí đơn hàng</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="user-management.html"><i class="fa fa-users" aria-hidden="true"></i><span
+                                class="txt">Quản lí người dùng</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="car-management.html"><i class="fa fa-car" aria-hidden="true"></i><span class="txt">Quản lí xe</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="driver-management.html"><i class="fa fa-user" aria-hidden="true"></i><span
+                                class="txt">Quản lí tài xế</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="price-management.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span
+                                class="txt">Quản lí giá</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="post-managemnet.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span
+                                class="txt">Quản lí tin đăng</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="file-management.html"><i class="fa fa-file" aria-hidden="true"></i><span
+                                class="txt">Quản lí tài liệu</span></a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a href="sale-report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span
+                                class="txt">Thống kê báo cáo</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- / side-nav -->
+
+            </div>
+            <!-- End .sidebar-scrollarea -->
+        </div>
+        <!-- End .sidebar-inner -->
+    </aside>
+    <!-- / page-sidebar -->
+    <!-- .page-content -->
+    <div class="page-content sidebar-page right-sidebar-page clearfix">
+        <!-- .page-content-wrapper -->
+        <div class="page-content-wrapper">
+            <div class="page-content-inner">
+                <!-- .page-content-inner -->
+                <div id="page-header" class="clearfix">
+                    <div class="page-header">
+                        <h2>Bảng theo dõi</h2>
+                        <span class="txt">Xem và cập nhật thông tin nhanh từ hệ thống</span>
+                    </div>
+                    <div class="header-stats">
+                        <div class="spark clearfix">
+                            <div class="spark-info"><span class="number">2345</span>Visitors</div>
+                            <div id="spark-visitors" class="sparkline"></div>
+                        </div>
+                        <div class="spark clearfix">
+                            <div class="spark-info"><span class="number">17345</span>Views</div>
+                            <div id="spark-templateviews" class="sparkline"></div>
+                        </div>
+                        <div class="spark clearfix">
+                            <div class="spark-info"><span class="number">3700$</span>Sales</div>
+                            <div id="spark-sales" class="sparkline"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- .row -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <!-- .col-md-3 -->
+                        <div class="panel panel-info tile panelClose panelRefresh">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Today Sales</h4>
+                            </div>
+                            <div class="panel-body pt0">
+                                <div class="progressbar-stats-1">
+                                    <div class="stats">
+                                        <i class="l-ecommerce-cart-content"></i>
+                                        <div id="visitor_number" class="stats-number" data-from="0" data-to="76">0</div>
+                                    </div>
+                                    <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                        <div class="progress-bar progress-bar-white" role="progressbar"
+                                             data-transitiongoal="63"></div>
+                                    </div>
+                                    <div class="comparison">
+                                        <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 10% up
+                                            from last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- / .col-md-3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <!-- .col-md-3 -->
+                        <div class="panel panel-success tile panelClose panelRefresh">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Today Visitors</h4>
+                            </div>
+                            <div class="panel-body pt0">
+                                <div class="progressbar-stats-1">
+                                    <div class="stats">
+                                        <i class="l-basic-geolocalize-05"></i>
+                                        <div class="stats-number" data-from="0" data-to="2547">0</div>
+                                    </div>
+                                    <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                        <div class="progress-bar progress-bar-white" role="progressbar"
+                                             data-transitiongoal="86"></div>
+                                    </div>
+                                    <div class="comparison">
+                                        <p class="mb0"><i class="fa fa-arrow-circle-o-up s20 mr5 pull-left"></i> 2% up
+                                            from last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- / .col-md-3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <!-- .col-md-3 -->
+                        <div class="panel panel-danger tile panelClose panelRefresh">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Support Questions</h4>
+                            </div>
+                            <div class="panel-body pt0">
+                                <div class="progressbar-stats-1">
+                                    <div class="stats">
+                                        <i class="l-basic-life-buoy"></i>
+                                        <div class="stats-number" data-from="0" data-to="78">0</div>
+                                    </div>
+                                    <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                        <div class="progress-bar progress-bar-white" role="progressbar"
+                                             data-transitiongoal="35"></div>
+                                    </div>
+                                    <div class="comparison">
+                                        <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 2%
+                                            down from last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- / .col-md-3 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <!-- .col-md-3 -->
+                        <div class="panel panel-default tile panelClose panelRefresh">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Profit this month</h4>
+                            </div>
+                            <div class="panel-body pt0">
+                                <div class="progressbar-stats-1 dark">
+                                    <div class="stats">
+                                        <i class="l-banknote"></i>
+                                        <div class="stats-number money" data-from="0" data-to="24568">0</div>
+                                    </div>
+                                    <div class="progress animated-bar flat transparent progress-bar-xs mb10 mt0">
+                                        <div class="progress-bar progress-bar-white" role="progressbar"
+                                             data-transitiongoal="55"></div>
+                                    </div>
+                                    <div class="comparison">
+                                        <p class="mb0"><i class="fa fa-arrow-circle-o-down s20 mr5 pull-left"></i> 1%
+                                            down from last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- / .col-md-3 -->
+                </div>
+                <!-- / .row -->
+                <div class="row">
+                    <!-- Start .row -->
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <!-- col-lg-8 start here -->
+                        <div class="col-lg-9 col-sm-9 col-xs-12 p0">
+                            <!-- col-lg-9 start here -->
+                            <div class="panel panel-default plain btrr0 bbrr0 panelRefresh" data-mh="payments">
+                                <!-- Start .panel -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="fa fa-dollar"></i> Payment received</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="line-chart-payments" style="width: 100%; height:250px;"></div>
+                                </div>
+                            </div>
+                            <!-- End .panel -->
+                        </div>
+                        <!-- col-lg-9 end here -->
+                        <div class="col-lg-3 col-sm-3 col-xs-12 p0">
+                            <!-- col-lg-3 start here -->
+                            <div class="panel panel-default tile btlr0 bblr0" data-mh="payments">
+                                <!-- Start .panel -->
+                                <div class="panel-body">
+                                    <div class="spark clearfix">
+                                        <div class="spark-info mb0"><span class="number stats-number money s32"
+                                                                          data-from="0" data-to="12857">0</span>
+                                        </div>
+                                        <div class="spark-info mtm5">Total income</div>
+                                    </div>
+                                    <div class="spark clearfix">
+                                        <div class="spark-info mb0"><span
+                                                class="number stats-number money s32 color-gray-light" data-from="0"
+                                                data-to="4578"></span>
+                                        </div>
+                                        <div class="sparkline spark-payments mt0"></div>
+                                        <div class="spark-info">Credit Card</div>
+                                    </div>
+                                    <div class="spark clearfix">
+                                        <div class="spark-info mb0"><span
+                                                class="number stats-number money s32 color-gray-light" data-from="0"
+                                                data-to="5241"></span>
+                                        </div>
+                                        <div class="sparkline spark-payments mt0"></div>
+                                        <div class="spark-info">Pay Pal</div>
+                                    </div>
+                                    <div class="db per100">
+                                        <a href="#" class="btn btn-info ml20 mt5">Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End .panel -->
+                        </div>
+                        <!-- col-lg-3 end here -->
+                    </div>
+                    <!-- col-lg-8 end here -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <!-- col-lg-4 start here -->
+                        <div class="panel panel-default plain">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><i class="glyphicon glyphicon-user"></i> Customer experience
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="text-center">
+                                    <div id="customer-exp" class="custom-progressbar blue"
+                                         style="width:244px;height:244px;">
+                                        <div class="percent">80<span>%</span>
+                                        </div>
+                                        <div class="description">satisfaction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- col-lg-4 end here -->
+                </div>
+                <!-- End .row -->
+                <div class="row">
+                    <!-- Start .row -->
+                    <div class="col-lg-8 col-md-12">
+                        <!-- col-lg-8 start here -->
+                        <div class="row">
+                            <!-- Start .row -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <!-- col-lg-6 start here -->
+                                <div class="col-lg-6 col-sm-6 p0">
+                                    <!-- col-lg-6 start here -->
+                                    <div class="panel tile panelRefresh">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"></h4>
+                                        </div>
+                                        <div class="panel-body p0">
+                                            <div class="weather snow">
+                                                <div class="degree color-red">-5&deg;</div>
+                                                <div class="location pb15"><i class="l-basic-geolocalize-01"></i> Varna
+                                                </div>
+                                                <div class="icon">
+                                                    <canvas id="weather-now" width="96" height="96"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-6 end here -->
+                                <div class="col-lg-6 col-sm-6 p0">
+                                    <!-- col-lg-6 start here -->
+                                    <div class="panel tile btlr0 bblr0 mb0">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"></h4>
+                                        </div>
+                                        <div class="panel-body p0">
+                                            <div class="row weather no-padding">
+                                                <!-- Start .row -->
+                                                <div class="col-md-5 col-sm-5 text-center red-bg">
+                                                    <canvas class="mt15" id="weather-monday" width="64"
+                                                            height="64"></canvas>
+                                                    <h5 class="uppercase strong color-white">Monday</h5>
+                                                </div>
+                                                <div class="col-md-7 col-sm-7 text-center">
+                                                    <div class="degree color-red">-2&deg;</div>
+                                                    <p class="text-muted uppercase s12">forecast</p>
+                                                </div>
+                                            </div>
+                                            <!-- End .row -->
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                    <div class="panel tile btlr0 bblr0 mb0">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"></h4>
+                                        </div>
+                                        <div class="panel-body p0">
+                                            <div class="row weather no-padding">
+                                                <!-- Start .row -->
+                                                <div class="col-md-5 col-sm-5 text-center blue-bg">
+                                                    <canvas class="mt15" id="weather-tuesday" width="64"
+                                                            height="64"></canvas>
+                                                    <h5 class="uppercase strong color-white">Tuesday</h5>
+                                                </div>
+                                                <div class="col-md-7 col-sm-7 text-center">
+                                                    <div class="degree color-blue">0&deg;</div>
+                                                    <p class="text-muted uppercase s12">forecast</p>
+                                                </div>
+                                            </div>
+                                            <!-- End .row -->
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-6 end here -->
+                            </div>
+                            <!-- col-lg-6 end here -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <!-- col-lg-6 start here -->
+                                <div class="panel panel-default plain toggle panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><i class="l-basic-target"></i> Montly Sales Goals</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <!-- Start .row -->
+                                            <div class="col-md-6">
+                                                <ul class="list-unstyled" style="margin-bottom:13px;">
+                                                    <li class="mb15">
+                                                        <p class="strong mb0">Shirts <span
+                                                                class="text-muted pull-right small">100 of 200 sold</span>
+                                                        </p>
+                                                        <div class="progress animated-bar progress-bar-sm flat mt0">
+                                                            <div class="progress-bar progress-bar-primary"
+                                                                 role="progressbar" data-transitiongoal="50"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <p class="strong mb0">Shoes <span
+                                                                class="text-muted pull-right small">150 of 200 sold</span>
+                                                        </p>
+                                                        <div class="progress animated-bar progress-bar-sm flat mt0">
+                                                            <div class="progress-bar progress-bar-danger"
+                                                                 role="progressbar" data-transitiongoal="75"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <p class="strong mb0">Watches <span
+                                                                class="text-muted pull-right small">25 of 200 sold</span>
+                                                        </p>
+                                                        <div class="progress animated-bar progress-bar-sm flat mt0">
+                                                            <div class="progress-bar progress-bar-warning"
+                                                                 role="progressbar" data-transitiongoal="12"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <p class="strong mb0">Coats <span
+                                                                class="text-muted pull-right small">195 of 300 sold</span>
+                                                        </p>
+                                                        <div class="progress animated-bar progress-bar-sm flat mt0">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 role="progressbar" data-transitiongoal="66"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="text-center">
+                                                    <div id="sales-goal" class="custom-progressbar green pull-left mr15"
+                                                         style="width:150px;height:150px;">
+                                                        <div class="percent">470</div>
+                                                        <div class="description s14">of 900 sold</div>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-progressbar-legend text-center">
+                                                    <p class="text-left"><span class="strong">65%</span> Sold</p>
+                                                    <p class="text-left"><span class="strong">35% </span> Left</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End .row -->
+                                    </div>
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+                            <!-- col-lg-6 end here -->
+                        </div>
+                        <!-- End .row -->
+                        <div class="row">
+                            <!-- Start .row -->
+                            <div class="col-lg-12">
+                                <!-- col-lg-12 start here -->
+                                <div class="col-lg-4 col-md-6 p0">
+                                    <!-- col-lg-4 start here -->
+                                    <div class="panel panel-default tile btrr0 bbrr0" data-mh="sales-locations">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"><i class="glyphicon glyphicon-list-alt"></i> Latest
+                                                Sales</h4>
+                                        </div>
+                                        <div class="panel-body pt0">
+                                            <ul class="list-unstyled mb0">
+                                                <li class="mb5 pb5 bbdashed">
+                                                    <span class="strong">New Your:</span> order
+                                                    <span class="color-red">#345675</span> - 176$
+                                                </li>
+                                                <li class="mb5 pb5 bbdashed">
+                                                    <span class="strong">Vancuver:</span> order
+                                                    <span class="color-red">#345674</span> - 56$
+                                                </li>
+                                                <li class="mb5 pb5 bbdashed">
+                                                    <span class="strong">London:</span> order
+                                                    <span class="color-red">#345673</span> - 12$
+                                                </li>
+                                                <li class="mb5 pb5 bbdashed">
+                                                    <span class="strong">Barcelona:</span> order
+                                                    <span class="color-red">#345672</span> - 34$
+                                                </li>
+                                                <li class="mb5 pb5 bbdashed">
+                                                    <span class="strong">Moskva:</span> order
+                                                    <span class="color-red">#345671</span> - 15$
+                                                </li>
+                                                <li class="mb5 pb5">
+                                                    <span class="strong">Tokio:</span> order
+                                                    <span class="color-red">#345669</span> - 67$
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-4 end here -->
+                                <div class="col-lg-8 col-md-6 p0">
+                                    <!-- col-lg-8 start here -->
+                                    <div class="panel panel-default plain panelRefresh btlr0 bblr0"
+                                         data-mh="sales-locations">
+                                        <!-- Start .panel -->
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title"><i class="fa l-basic-geolocalize-01"></i> Last sales
+                                                locations</h4>
+                                        </div>
+                                        <div class="panel-body p0">
+                                            <div id="world-map" style="width: 100%; height: 250px"></div>
+                                        </div>
+                                    </div>
+                                    <!-- End .panel -->
+                                </div>
+                                <!-- col-lg-8 end here -->
+                            </div>
+                            <!-- col-lg-12 end here -->
+                        </div>
+                        <!-- End .row -->
+                    </div>
+                    <!-- col-lg-8 end here -->
+                    <div class="col-lg-4 col-md-12">
+                        <!-- col-lg-4 start here -->
+                        <div class="panel panel-default plain toggle panelMove panelClose panelRefresh">
+                            <!-- Start .panel -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><i class="fa fa-comments"></i>Customer Comments</h4>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-group recent-comments">
+                                    <li class="list-group-item clearfix comment-success">
+                                        <div class="avatar pull-left mr15">
+                                            <img src="assets_admin/img/avatars/2.jpg" alt="avatar">
+                                        </div>
+                                        <p class="text-ellipsis"><span class="name strong">Ben Simpson: </span> Very
+                                            happy with your support is really great, keep that quality.</p>
+                                        <span class="date text-muted small pull-left">Dec 18, 2014, 4:24 pm</span>
+                                        <a href="#" class="see-more small pull-right">View comment</a>
+                                    </li>
+                                    <li class="list-group-item clearfix comment-default">
+                                        <div class="avatar pull-left mr15">
+                                            <img src="assets_admin/img/avatars/3.jpg" alt="avatar">
+                                        </div>
+                                        <p class="text-ellipsis"><span class="name strong">Jonh: </span> Fine items but
+                                            you could invest more time.</p>
+                                        <span class="date text-muted small pull-left">Dec 18, 2014, 12:11 pm</span>
+                                        <a href="#" class="see-more small pull-right">View comment</a>
+                                    </li>
+                                    <li class="list-group-item clearfix comment-info">
+                                        <div class="avatar pull-left mr15">
+                                            <img src="assets_admin/img/avatars/4.jpg" alt="avatar">
+                                        </div>
+                                        <p class="text-ellipsis"><span class="name strong">Dina Dowsen: </span> Awesome
+                                            items, really fast delivery.</p>
+                                        <span class="date text-muted small pull-left">Dec 18, 2014, 8:17 pm</span>
+                                        <a href="#" class="see-more small pull-right">View comment</a>
+                                    </li>
+                                    <li class="list-group-item clearfix comment-warning">
+                                        <div class="avatar pull-left mr15">
+                                            <img src="assets_admin/img/avatars/5.jpg" alt="avatar">
+                                        </div>
+                                        <p class="text-ellipsis"><span class="name strong">Matt: </span> I`m not
+                                            impressed but is fine.</p>
+                                        <span class="date text-muted small pull-left">Dec 17, 2014, 6:24 pm</span>
+                                        <a href="#" class="see-more small pull-right">View comment</a>
+                                    </li>
+                                    <li class="list-group-item clearfix comment-danger">
+                                        <div class="avatar pull-left mr15">
+                                            <img src="assets_admin/img/avatars/6.jpg" alt="avatar">
+                                        </div>
+                                        <p class="text-ellipsis"><span class="name strong">Ben Simpson: </span> This is
+                                            worst item i ever seen.</p>
+                                        <span class="date text-muted small pull-left">Dec 16, 2014, 1:20 pm</span>
+                                        <a href="#" class="see-more small pull-right">View comment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End .panel -->
+                    </div>
+                    <!-- col-lg-4 end here -->
+                </div>
+                <!-- End .row -->
+            </div>
+            <!-- / .page-content-inner -->
+        </div>
+        <!-- / page-content-wrapper -->
+    </div>
+    <!-- / page-content -->
+</div>
+<!-- / #wrapper -->
+<div id="footer" class="clearfix sidebar-page right-sidebar-page">
+    <!-- Start #footer  -->
+    <p class="text-center">
+        Copyrights &copy; 2018 <a href="http://parotservices.com/" class="color-blue strong" target="_blank">Parrot
+        Services</a>. All rights reserved.
+    </p>
+</div>
+<!-- End #footer  -->
+<!-- Back to top -->
+<div id="back-to-top"><a href="#">Back to Top</a>
+</div>
+<!-- Javascripts -->
+<!-- Load pace first -->
+<script src="assets_admin/plugins/core/pace/pace.min.js"></script>
+<!-- Important javascript libs(put in all pages) -->
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-2.1.1.min.js">\x3C/script>')
+</script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+    window.jQuery || document.write('<script src="assets_admin/js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+</script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="assets_admin/js/libs/excanvas.min.js"></script>
+<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="assets_admin/js/libs/respond.min.js"></script>
+<![endif]-->
+<!-- Bootstrap plugins -->
+<script src="assets_admin/js/bootstrap/bootstrap.js"></script>
+<!-- Core plugins ( not remove ) -->
+<script src="assets_admin/js/libs/modernizr.custom.js"></script>
+<!-- Handle responsive view functions -->
+<script src="assets_admin/js/jRespond.min.js"></script>
+<!-- Custom scroll for sidebars,tables and etc. -->
+<script src="assets_admin/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets_admin/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+<!-- Remove click delay in touch -->
+<script src="assets_admin/plugins/core/fastclick/fastclick.js"></script>
+<!-- Increase jquery animation speed -->
+<script src="assets_admin/plugins/core/velocity/jquery.velocity.min.js"></script>
+<!-- Quick search plugin (fast search for many widgets) -->
+<script src="assets_admin/plugins/core/quicksearch/jquery.quicksearch.js"></script>
+<!-- Bootbox fast bootstrap modals -->
+<script src="assets_admin/plugins/ui/bootbox/bootbox.js"></script>
+<!-- Other plugins ( load only nessesary plugins for every page) -->
+<script src="assets_admin/js/libs/date.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.custom.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.pie.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.resize.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.time.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.growraf.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.categories.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.stack.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.orderBars.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.tooltip.min.js"></script>
+<script src="assets_admin/plugins/charts/flot/jquery.flot.curvedLines.js"></script>
+<script src="assets_admin/plugins/charts/sparklines/jquery.sparkline.js"></script>
+<script src="assets_admin/plugins/charts/progressbars/progressbar.js"></script>
+<script src="assets_admin/plugins/ui/waypoint/waypoints.js"></script>
+<script src="assets_admin/plugins/ui/weather/skyicons.js"></script>
+<script src="assets_admin/plugins/ui/notify/jquery.gritter.js"></script>
+<script src="assets_admin/plugins/misc/vectormaps/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="assets_admin/plugins/misc/vectormaps/maps/jquery-jvectormap-world-mill-en.js"></script>
+<script src="assets_admin/plugins/misc/countTo/jquery.countTo.js"></script>
+<script src="assets_admin/js/jquery.dynamic.js"></script>
+<script src="assets_admin/js/main.js"></script>
+<script src="assets_admin/js/pages/dashboard.js"></script>
+</body>
+</html>
