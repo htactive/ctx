@@ -171,9 +171,7 @@
                 this.fixedSidebar('left');
             }
             //fixed right sidebar
-            if(plugin.settings.rightSidebar.fixed && store.get('fixed-right-sidebar') == 1) {
-                this.fixedSidebar('right');
-            }
+
             
             //check if sidebar need to be toggled
             if(plugin.settings.sidebar.rememberToggle) {
@@ -189,20 +187,12 @@
             //check if right sidebar need to be toggled
             if(plugin.settings.rightSidebar.rememberToggle) {
                 var breakpoint = plugin.getBreakPoint();
-                if(store.get('rightSidebarToggle') == 1 && breakpoint == 'large' || store.get('rightSidebarToggle') == 1 && breakpoint == 'laptop') {
-                    $('#toggle-right-sidebar').addClass('hide-right-sidebar');
-                    plugin.hideRightSidebar();
-                }
-                if (store.get('rightSidebarToggle') == 1 && breakpoint == 'tablet' || store.get('rightSidebarToggle') == 1 && breakpoint == 'phone') {
-                    $('#toggle-right-sidebar').addClass('hide-right-sidebar');
-                }
+
             }
 
             //------------- When window is load -------------//
             $(window).load(function(){
-                if (store.get('fixed-header') == 0 && store.get('fixed-right-sidebar') == 1) {
-                    plugin.rightSidebarTopPosition();
-                }
+
                 plugin.stickyFooter();
             });
 
@@ -215,9 +205,6 @@
 
             //------------- Scroll events -------------//
             $(window).scroll(function() {
-                if (store.get('fixed-header') == 0 && store.get('fixed-right-sidebar') == 1) {
-                    plugin.rightSidebarTopPosition();
-                }
                 plugin.stickyFooter();
             });
 
@@ -303,20 +290,7 @@
 
             if (val === 'right') {
                 if (breakpoint == 'large' || breakpoint == 'laptop') {
-                    $('#right-sidebar').addClass('sidebar-fixed');
-                    //activate slim scroll
-                    $('#right-sidebar .sidebar-scrollarea').slimScroll({
-                        position: "right",
-                        height: '100%',
-                        distance: '1px',
-                        railVisible: false,
-                        size: plugin.settings.customScroll.size,                    
-                        color: plugin.settings.customScroll.rscolor,                    
-                        railOpacity: plugin.settings.customScroll.opacity,
-                        railColor: plugin.settings.customScroll.railColor
-                    });   
-                    store.set('fixed-right-sidebar', 1); 
-                    $('body').addClass('fixed-right-sidebar');
+
                 }
             }
         }
@@ -325,9 +299,9 @@
         plugin.rightSidebarTopPosition = function () {
             var scrollTop = $(document).scrollTop();
             if (scrollTop > 50 - 1) {
-                $('#right-sidebar').addClass('rstop');
+
             } else {
-                $('#right-sidebar').removeClass('rstop');
+
             }
         }
 
@@ -365,11 +339,7 @@
             }
 
             if (val === 'right') {
-                var scrollarea = $('#right-sidebar .sidebar-scrollarea');
-                $('#right-sidebar').removeClass('sidebar-fixed');
-                plugin.removeScrollTo(scrollarea);
-                store.set('fixed-right-sidebar', 0);
-                $('body').removeClass('fixed-right-sidebar');
+
             }
         
         }
@@ -377,24 +347,12 @@
         //toggle sidebar
         plugin.toggleSidebar = function() {
             var toggleButton = $('.toggle-sidebar>a');
-            var toggleRButton = $('#toggle-right-sidebar');
+
             var breakpoint = plugin.getBreakPoint();
             var scrollto = $("#sidebar .sidebar-scrollarea");
             var content = $(".page-content");
             var sidebar = $(".page-sidebar");
 
-            toggleRButton.on("click", function(e){
-                e.preventDefault();
-                if ($(this).hasClass('hide-right-sidebar')) {
-                    plugin.showRightSidebar();
-                    $(this).removeClass('hide-right-sidebar');
-                    store.set('rightSidebarToggle', 0);
-                } else {                  
-                    plugin.hideRightSidebar();
-                    $(this).addClass('hide-right-sidebar');
-                    store.set('rightSidebarToggle', 1);
-                }
-            });
 
             toggleButton.on("click", function(e){
                 e.preventDefault();
@@ -426,24 +384,12 @@
 
         //hide right sidebar
         plugin.hideRightSidebar = function() {
-            var breakpoint = plugin.getBreakPoint();
-            $('#right-sidebar').addClass('hide-sidebar');
 
-            if (breakpoint == 'laptop' || breakpoint == 'tablet' || breakpoint == 'phone') {
-                $('.page-content').removeClass('rOverLap');
-            }
-            $('#back-to-top').removeClass('rightsidebar');
         }
 
         //show right sidebar
         plugin.showRightSidebar = function() {
-            var breakpoint = plugin.getBreakPoint();
-            $('#right-sidebar').removeClass('hide-sidebar');
-            if (breakpoint == 'laptop' || breakpoint == 'tablet' || breakpoint == 'phone') {
-                $('.page-content').addClass('rOverLap');
-            }
 
-            $('#back-to-top').addClass('rightsidebar');
         }
 
         //hide left sidebar
@@ -1310,7 +1256,7 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
             var userList = $('ul.user-list').not('.chat-messages');
             var users = userList.find('a');
             var chatback = $('.chat-back>a');
-            var rbScroll = $('#right-sidebar .sidebar-scrollarea');
+
             var chatForm = $('#chat-write');
 
             users.click(function(){
@@ -1346,14 +1292,13 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
         plugin.removeDefaultClassess = function () {
             var breakpoint = plugin.getBreakPoint();
             var leftsidebar = $('#sidebar');
-            var rightsidebar = $('#right-sidebar');
+
             var logo = $('#header>.navbar-brand');
             var content = $('.page-content');
             
             content.addClass('sidebar-page');
 
             leftsidebar.removeClass('hidden-md hidden-sm hidden-xs');
-            rightsidebar.removeClass('hidden-md hidden-sm hidden-xs');
             logo.removeClass('hide-logo hidden-xs hidden-sm');
         }
 
@@ -1387,7 +1332,7 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
                     plugin.removeDefaultClassess();
                     plugin.showRightSidebar();
                     store.set('rightSidebarToggle', 0);
-                    $('#toggle-right-sidebar').removeClass('hide-right-sidebar');
+
                 },
                 exit: function() {
 
