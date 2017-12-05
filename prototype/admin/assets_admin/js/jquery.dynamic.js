@@ -428,7 +428,7 @@
         plugin.hideRightSidebar = function() {
             var breakpoint = plugin.getBreakPoint();
             $('#right-sidebar').addClass('hide-sidebar');
-            $('.page-content, #footer').removeClass('right-sidebar-page');
+
             if (breakpoint == 'laptop' || breakpoint == 'tablet' || breakpoint == 'phone') {
                 $('.page-content').removeClass('rOverLap');
             }
@@ -442,7 +442,7 @@
             if (breakpoint == 'laptop' || breakpoint == 'tablet' || breakpoint == 'phone') {
                 $('.page-content').addClass('rOverLap');
             }
-            $('.page-content, #footer').addClass('right-sidebar-page');
+
             $('#back-to-top').addClass('rightsidebar');
         }
 
@@ -1351,7 +1351,7 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
             var content = $('.page-content');
             
             content.addClass('sidebar-page');
-            content.addClass('right-sidebar-page');
+
             leftsidebar.removeClass('hidden-md hidden-sm hidden-xs');
             rightsidebar.removeClass('hidden-md hidden-sm hidden-xs');
             logo.removeClass('hide-logo hidden-xs hidden-sm');
